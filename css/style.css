@@ -566,6 +566,85 @@ header .phone-search {
   text-transform: uppercase;
 }
 
+.advantages {
+  position: relative;
+}
+.advantages .heading {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #076324;
+  padding: 24px 0 0 0;
+}
+.advantages .heading h1 {
+  font-size: 16px;
+  color: #222;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+}
+.advantages .grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  height: 100%;
+  margin-left: 295px;
+}
+.advantages .grid .grid-item {
+  width: 301px;
+  height: 301px;
+  background-image: url(../src/img/bg-adv.svg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: white;
+  border: 1px solid #0062aa;
+  border-bottom: none;
+  display: flex;
+  padding: 20px;
+}
+.advantages .grid .grid-item p {
+  font-size: 14px;
+  color: #222;
+  line-height: 16px;
+  font-weight: 400;
+  margin-bottom: auto;
+}
+.advantages .grid .grid-item p.desc {
+  margin-top: auto;
+}
+.advantages #item-0 {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-end: 2;
+}
+.advantages #item-1 {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 2;
+  grid-column-end: 3;
+}
+.advantages #item-2 {
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-row-end: 2;
+  grid-column-end: 4;
+}
+.advantages #item-3 {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 3;
+}
+.advantages #item-4 {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 2;
+}
+
 .modal-body {
   position: relative;
   z-index: 1;
