@@ -442,6 +442,130 @@ header .phone-search {
   grid-column-end: 6;
 }
 
+.about {
+  position: relative;
+  padding: 100px 0;
+}
+.about .heading {
+  display: flex;
+  border-top: 1px solid #076324;
+  padding: 24px 0 0 0;
+}
+.about .heading h1 {
+  font-size: 16px;
+  color: #222;
+  line-height: 16px;
+  font-weight: 500;
+  margin: 0;
+  text-transform: uppercase;
+}
+.about .heading p {
+  display: block;
+  max-width: 491px;
+  font-size: 16px;
+  color: #222;
+  line-height: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-left: 243px;
+}
+.about .heading .page-number {
+  margin-left: auto;
+}
+.about .description {
+  margin-top: 63px;
+  margin-left: 295px;
+}
+.about .description .mobile-p {
+  display: none;
+}
+.about .description h2 {
+  font-size: 24px;
+  color: #222;
+  line-height: 26px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+}
+.about .description h2 span {
+  font-size: 24px;
+  color: #222;
+  line-height: 26px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #8fcf21;
+}
+.about .description .wrapper-p {
+  display: flex;
+  gap: 53px;
+  margin-top: 63px;
+}
+.about .description .wrapper-p p {
+  font-size: 16px;
+  color: #222;
+  line-height: 20px;
+  font-weight: 400;
+  max-width: 434px;
+  width: 100%;
+}
+.about .description .wrapper-p p:last-child {
+  max-width: 458px;
+}
+.about .wrapper-img {
+  margin-top: 28px;
+  display: flex;
+  align-items: start;
+  gap: 25px;
+}
+.about .wrapper-img .smaller-img {
+  display: block;
+  max-width: 270px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.about .wrapper-img .bigger-img {
+  max-width: 362px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.about .wrapper-img h3 {
+  font-size: 96px;
+  color: #222;
+  line-height: 67px;
+  font-weight: 500;
+  color: #8fcf21;
+  margin: 0;
+  margin-top: auto;
+  position: relative;
+  right: 115px;
+}
+.about .wrapper-text-btn {
+  margin-top: 28px;
+  margin-left: 295px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.about .wrapper-text-btn p {
+  font-size: 16px;
+  color: #222;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  max-width: 487px;
+  margin-bottom: 50px;
+}
+.about .wrapper-text-btn a {
+  font-size: 16px;
+  color: #222;
+  line-height: 26px;
+  font-weight: 500;
+  color: #0062aa;
+  text-transform: uppercase;
+}
+
 .modal-body {
   position: relative;
   z-index: 1;

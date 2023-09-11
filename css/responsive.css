@@ -156,7 +156,7 @@
   }
   .services {
     position: relative;
-    padding: 50px 0;
+    padding: 50px 0 0 0;
   }
   .services .heading {
     padding: 15px 0 0 0;
@@ -291,5 +291,113 @@
     grid-column-start: 1;
     grid-row-end: 7;
     grid-column-end: 2;
+  }
+  .about {
+    padding: 50px 0;
+  }
+  .about .heading {
+    padding: 15px 0 0 0;
+    justify-content: space-between;
+  }
+  .about .heading h1 {
+    font-size: 14px;
+    color: #222;
+    line-height: 16px;
+    font-weight: 500;
+  }
+  .about .heading p {
+    display: none;
+  }
+  .about .description {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  .about .description .mobile-p {
+    display: block;
+    font-size: 14px;
+    color: #222;
+    line-height: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .about .description h2 {
+    font-size: 20px;
+    color: #222;
+    line-height: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 30px;
+  }
+  .about .description h2 span {
+    font-size: 20px;
+    color: #222;
+    line-height: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #8fcf21;
+  }
+  .about .description .wrapper-p {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 30px;
+  }
+  .about .description .wrapper-p p {
+    font-size: 14px;
+    color: #222;
+    line-height: 20px;
+    font-weight: 400;
+    max-width: 100%;
+  }
+  .about .description .wrapper-p p:last-child {
+    max-width: 100%;
+  }
+  .about .wrapper-img {
+    margin-top: 28px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 0;
+    position: relative;
+    z-index: 1;
+  }
+  .about .wrapper-img .smaller-img {
+    display: none;
+  }
+  .about .wrapper-img .bigger-img {
+    max-width: 289px;
+  }
+  .about .wrapper-img h3 {
+    font-size: 48px;
+    color: #222;
+    line-height: 67px;
+    font-weight: 500;
+    color: #8fcf21;
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    bottom: 0;
+  }
+  .about .wrapper-text-btn {
+    margin-top: 30px;
+    margin-left: 0;
+    gap: 30px;
+  }
+  .about .wrapper-text-btn p {
+    font-size: 14px;
+    color: #222;
+    line-height: 20px;
+    font-weight: 400;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .about .wrapper-text-btn a {
+    font-size: 14px;
+    color: #222;
+    line-height: 20px;
+    font-weight: 500;
+    color: #0062aa;
+    text-transform: uppercase;
   }
 }/*# sourceMappingURL=responsive.css.map */

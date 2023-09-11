@@ -200,7 +200,7 @@ $black: #222;
 
   .services {
     position: relative;
-    padding: 50px 0;
+    padding: 50px 0 0 0;
 
     .heading {
       padding: 15px 0 0 0;
@@ -366,6 +366,108 @@ $black: #222;
 
         grid-row-end: 7;
         grid-column-end: 2;
+      }
+    }
+  }
+
+  .about {
+    padding: 50px 0;
+
+    .heading {
+      padding: 15px 0 0 0;
+      justify-content: space-between;
+
+      h1 {
+        @include font(14px, 16px, 500);
+      }
+
+      p {
+        display: none;
+      }
+    }
+
+    .description {
+      margin-top: 30px;
+      margin-left: 0;
+
+      .mobile-p {
+        display: block;
+        @include font(14px, 20px, 400);
+        text-transform: uppercase;
+      }
+
+      h2 {
+        @include font(20px, 24px, 500);
+        text-transform: uppercase;
+        margin: 0;
+        margin-top: 30px;
+
+        span {
+          @include font(20px, 24px, 500);
+          text-transform: uppercase;
+          color: $lightgreen;
+        }
+      }
+
+      .wrapper-p {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 30px;
+
+        p {
+          @include font(14px, 20px, 400);
+          max-width: 100%;
+
+          &:last-child {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+
+    .wrapper-img {
+      margin-top: 28px;
+      display: flex;
+      align-items: start;
+      justify-content: start;
+      gap: 0;
+      position: relative;
+      z-index: 1;
+
+      .smaller-img {
+        display: none;
+      }
+
+      .bigger-img {
+        max-width: 289px;
+      }
+
+      h3 {
+        @include font(48px, 67px, 500);
+        color: $lightgreen;
+        position: absolute;
+        z-index: 2;
+        right: 10px;
+        bottom: 0;
+      }
+    }
+
+    .wrapper-text-btn {
+      margin-top: 30px;
+      margin-left: 0;
+      gap: 30px;
+
+      p {
+        @include font(14px, 20px, 400);
+        max-width: 100%;
+        margin-bottom: 30px;
+      }
+
+      a {
+        @include font(14px, 20px, 500);
+        color: #0062aa;
+        text-transform: uppercase;
       }
     }
   }
