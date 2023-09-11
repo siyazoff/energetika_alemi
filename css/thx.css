@@ -1,0 +1,33 @@
+@import url("../src/fonts/CeraPro/stylesheet.css");
+@import url("../src/fonts/GoshaSans/stylesheet.css");
+.logo {
+  background-color: #e30016;
+}
+
+.thx {
+  min-height: 585px;
+}
+.thx .thx-container {
+  height: 100%;
+  width: 100%;
+  margin: 238px 0 0 0;
+  text-align: center;
+}
+.thx .thx-container p {
+  font-size: 32px;
+  color: #222;
+  line-height: 32px;
+  font-family: "Gosha Sans";
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 75px;
+}
+.thx .thx-container a {
+  font-size: 16px;
+  color: #222;
+  line-height: 16px;
+  font-family: "Gosha Sans";
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #e30016;
+}/*# sourceMappingURL=thx.css.map */

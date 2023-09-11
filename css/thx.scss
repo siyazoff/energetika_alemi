@@ -1,0 +1,45 @@
+@import url("../src/fonts/CeraPro/stylesheet.css");
+@import url("../src/fonts/GoshaSans/stylesheet.css");
+
+$gosha: "Gosha Sans";
+$cera: "Cera Pro";
+
+$red: #e30016;
+$black: #222;
+$gray: #444;
+
+@mixin title-text($titleVal, $lineHeight, $fontFam, $fontWeight) {
+  font-size: $titleVal;
+  color: #222;
+  line-height: $lineHeight;
+  font-family: $fontFam;
+  font-weight: $fontWeight;
+}
+
+.logo {
+  background-color: $red;
+}
+
+.thx {
+  min-height: 585px;
+
+  .thx-container {
+    height: 100%;
+    width: 100%;
+    margin: 238px 0 0 0;
+    text-align: center;
+
+    p {
+      @include title-text(32px, 32px, $gosha, 500);
+      text-transform: uppercase;
+      margin-bottom: 75px;
+    }
+
+    a {
+      @include title-text(16px, 16px, $gosha, 500);
+      text-transform: uppercase;
+
+      color: $red;
+    }
+  }
+}
