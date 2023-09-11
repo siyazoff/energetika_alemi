@@ -34,36 +34,16 @@ $(document).ready(function () {
   $("input[id='tel']").mask("+7 (999) 999-99-99");
   $("input[id='tel-number']").mask("+7 (999) 999-99-99");
 
-  $("#slider").on("input change", (e) => {
-    const sliderPos = e.target.value;
-    // Update the width of the foreground image
-    $(".foreground-img").css("width", `${sliderPos}%`);
-    // Update the position of the slider button
-    $(".slider-button").css("left", `calc(${sliderPos}% - 19px)`);
-  });
-
-  $("#slider-2").on("input change", (e) => {
-    const sliderPos = e.target.value;
-    // Update the width of the foreground image
-    $(".foreground-img-2").css("width", `${sliderPos}%`);
-    // Update the position of the slider button
-    $(".slider-button-2").css("left", `calc(${sliderPos}% - 19px)`);
-  });
-
-  const header = document.querySelector("#header");
-  let prevScrollPos = window.scrollY;
-
+  let prevScrollpos = window.scrollY;
   window.addEventListener("scroll", () => {
-    const currentScrollPos = window.scrollY;
-
-    if (prevScrollPos > currentScrollPos) {
-      // Прокрутка вверх
-      header.style.top = "0";
+    let currentScrollPos = window.scrollY;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("header").style.top = "0px";
+    } else if (currentScrollPos == 0) {
+      document.getElementById("header").style.top = "0px";
     } else {
-      // Прокрутка вниз
-      header.style.top = "-100%"; // Можно изменить на 0, если хотите, чтобы header всегда был видимым при прокрутке вниз
+      document.getElementById("header").style.top = "-205px";
     }
-
-    prevScrollPos = currentScrollPos;
+    prevScrollpos = currentScrollPos;
   });
 });

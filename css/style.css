@@ -184,7 +184,7 @@ p {
 
 .cont {
   width: 100%;
-  max-width: 1140px;
+  max-width: 1240px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -264,6 +264,182 @@ header .phone-search {
 }
 .home video {
   margin-top: 50px;
+}
+
+.services {
+  position: relative;
+  padding: 100px 0;
+}
+.services .heading {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #076324;
+  padding: 24px 0 0 0;
+}
+.services .heading h1 {
+  font-size: 16px;
+  color: #222;
+  line-height: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+}
+.services .heading .wrapper-page {
+  display: flex;
+  gap: 50px;
+}
+.services .heading .wrapper-page a p {
+  font-size: 16px;
+  color: #222;
+  line-height: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-line: underline;
+  color: #0062aa;
+}
+.services .heading .wrapper-page p {
+  font-size: 16px;
+  color: #222;
+  line-height: 16px;
+  font-weight: 500;
+}
+.services .grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 23px;
+  height: 100%;
+}
+.services .grid .grid-item {
+  width: 100%;
+  height: 272px;
+  display: flex;
+}
+.services .grid .grid-item .title {
+  margin: auto 0 20px 20px;
+}
+.services .grid .grid-item .title p {
+  font-size: 14px;
+  color: #222;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.services .grid #item-1 {
+  background-image: url(../src/img/serv-1.jpg);
+  background-size: 120%;
+  transition: all 0.3s;
+}
+.services .grid #item-1:hover {
+  transition: all 0.3s;
+  background-size: 130%;
+}
+.services .grid #item-1 .title p {
+  color: white;
+}
+.services .grid #item-3 {
+  background-image: url(../src/img/serv-2.jpg);
+  background-size: 120%;
+  transition: all 0.3s;
+  width: 295px;
+}
+.services .grid #item-3:hover {
+  transition: all 0.3s;
+  background-size: 130%;
+}
+.services .grid #item-3 .title p {
+  color: white;
+}
+.services .grid #item-6 {
+  background-image: url(../src/img/serv-3.jpg);
+  background-size: 120%;
+  transition: all 0.3s;
+}
+.services .grid #item-6:hover {
+  transition: all 0.3s;
+  background-size: 130%;
+}
+.services .grid #item-6 .title p {
+  color: white;
+}
+.services .grid #item-7 {
+  background-image: url(../src/img/serv-4.jpg);
+  background-size: 120%;
+  transition: all 0.3s;
+  background-position: right;
+}
+.services .grid #item-7:hover {
+  transition: all 0.3s;
+  background-size: 130%;
+}
+.services .grid #item-7 .title p {
+  color: white;
+}
+.services .grid #item-0 {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-end: 2;
+}
+.services .grid #item-1 {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 2;
+  grid-column-end: 4;
+}
+.services .grid #item-2 {
+  grid-row-start: 1;
+  grid-column-start: 4;
+  grid-row-end: 2;
+  grid-column-end: 6;
+}
+.services .grid #item-3 {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 2;
+}
+.services .grid #item-4 {
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-row-end: 4;
+  grid-column-end: 2;
+}
+.services .grid #item-5 {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-column-end: 4;
+}
+.services .grid #item-5 .title {
+  margin: auto 0 0 20px;
+}
+.services .grid #item-5 .title p {
+  font-size: 14px;
+  color: #222;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.services .grid #item-6 {
+  grid-row-start: 2;
+  grid-column-start: 4;
+  grid-row-end: 3;
+  grid-column-end: 6;
+}
+.services .grid #item-7 {
+  grid-row-start: 3;
+  grid-column-start: 2;
+  grid-row-end: 4;
+  grid-column-end: 4;
+}
+.services .grid #item-8 {
+  grid-row-start: 3;
+  grid-column-start: 4;
+  grid-row-end: 4;
+  grid-column-end: 6;
 }
 
 .modal-body {
