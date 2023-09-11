@@ -61,7 +61,7 @@ $(document).ready(function () {
       header.style.top = "0";
     } else {
       // Прокрутка вниз
-      header.style.top = "-100px"; // Можно изменить на 0, если хотите, чтобы header всегда был видимым при прокрутке вниз
+      header.style.top = "-100%"; // Можно изменить на 0, если хотите, чтобы header всегда был видимым при прокрутке вниз
     }
 
     prevScrollPos = currentScrollPos;

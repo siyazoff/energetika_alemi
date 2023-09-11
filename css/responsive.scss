@@ -1,10 +1,8 @@
-@import url("../src/Manrope/stylesheet.css");
-
-$manrope: "Manrope";
+$manrope: "Jost";
 $blue: #047481;
 $darkblue: #111928;
 $gray: #5e5f62;
-$black: #040508;
+$black: #222;
 
 @mixin font($titleVal, $lineHeight, $fontWeight) {
   font-size: $titleVal;
@@ -27,10 +25,6 @@ $black: #040508;
     order: 3;
   }
 
-  .desktop-btn {
-    display: none;
-  }
-
   .hamb__field {
     padding: 10px 10px;
     cursor: pointer;
@@ -38,12 +32,12 @@ $black: #040508;
 
   .bar {
     display: block;
-    width: 30px;
-    height: 3px;
-    margin: 6px auto;
-    background-color: #047481;
+    width: 20px;
+    height: 2px;
+    margin: 3px auto;
+    background-color: #222222;
     transition: 0.2s;
-    border-radius: 12px;
+    border-radius: 10px;
   }
 
   .popup {
@@ -52,7 +46,8 @@ $black: #040508;
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.63);
+    backdrop-filter: blur(200px);
     z-index: 100;
     display: flex;
     transition: 0.3s;
@@ -67,22 +62,30 @@ $black: #040508;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: start;
-    padding: 10px 0;
+    padding: 30px 0 20px;
     overflow: auto;
   }
 
   .popup .menu > li {
     width: 100%;
+    display: flex;
+    padding-inline: 42px;
+  }
+
+  .popup .menu > li > .line {
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.22);
+    margin: 48px 0;
   }
 
   .popup .menu > li > a {
+    margin-right: auto;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    @include font(17px, 28px, 400);
+    padding: 15px 0;
+    @include font(20px, 20px, 400);
   }
 
   .popup .menu > li > a:hover {
@@ -94,11 +97,11 @@ $black: #040508;
   }
 
   .hamb__field.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(3px) rotate(45deg);
   }
 
   .hamb__field.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-7px) rotate(-45deg);
   }
 
   body.noscroll {
@@ -107,617 +110,45 @@ $black: #040508;
 
   header {
     .logo-menu {
+      width: auto;
+
       a {
         img {
-          width: 120px;
+          max-width: 44px;
+          width: 100%;
+          height: 100%;
         }
       }
     }
-  }
 
-  header .number-callme {
-    margin-left: auto;
-    align-items: center;
-    display: none;
+    .phone-search {
+      order: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-    a {
-      margin-right: 0;
-      @include font(11px, 13px, 400);
-
-      p {
-        @include font(11px, 13px, 400);
-        color: #5e5f62;
-        margin-top: 4px;
-      }
-    }
-  }
-
-  .popup {
-    .menu {
-      li.mobile-li {
+      ul {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+        gap: 45px;
+        padding: 0;
 
-        button {
-          width: 80%;
-          margin-top: 24px;
+        li {
+          a {
+            flex-wrap: nowrap;
+            @include font(14px, 14px, 400);
+          }
         }
       }
     }
   }
 
-  .logo {
-    margin-left: 0;
-    img {
-      width: 81px;
-    }
-  }
-
-  //! мб удалить потом
   section {
     overflow: hidden;
   }
 
   .cont {
     padding-inline: 5px;
-  }
-
-  .home {
-    top: 40px;
-
-    .home-title {
-      height: 100%;
-      padding: 0;
-
-      h1 {
-        @include font(24px, 28px, 500);
-        margin-bottom: 16px;
-      }
-
-      h1.home-second {
-        margin-left: 0;
-      }
-    }
-
-    .common-wrap {
-      display: block;
-    }
-
-    .wrapper-img-title-btn {
-      .img-title {
-        display: block;
-
-        .img-wrapper {
-          max-width: 100%;
-        }
-
-        .title {
-          max-width: 100%;
-          margin-top: 24px;
-
-          p {
-            @include font(15px, 24px, 400);
-            color: #5e5f62;
-          }
-        }
-      }
-
-      .custom-btn {
-        margin-top: 24px;
-      }
-    }
-
-    .wrapper-img-2 {
-      max-width: 100%;
-      margin-top: 32px;
-    }
-  }
-
-  .services {
-    padding: 40px 0;
-
-    &::before {
-      background: none;
-    }
-
-    .heading {
-      h1 {
-        @include font(24px, 28px, 500);
-        color: white;
-      }
-    }
-
-    .grid-cont {
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr;
-
-      .item-line {
-        display: none;
-      }
-
-      #item-0 {
-        grid-row-start: 1;
-        grid-column-start: 1;
-
-        grid-row-end: 2;
-        grid-column-end: 2;
-        border-top: 1px solid #4b5563;
-      }
-
-      #item-1 {
-        grid-row-start: 2;
-        grid-column-start: 1;
-
-        grid-row-end: 3;
-        grid-column-end: 2;
-      }
-
-      #item-2 {
-        grid-row-start: 3;
-        grid-column-start: 1;
-
-        grid-row-end: 4;
-        grid-column-end: 2;
-      }
-
-      #item-5 {
-        grid-row-start: 4;
-        grid-column-start: 1;
-
-        grid-row-end: 5;
-        grid-column-end: 2;
-      }
-
-      #item-6 {
-        grid-row-start: 5;
-        grid-column-start: 1;
-
-        grid-row-end: 6;
-        grid-column-end: 2;
-      }
-
-      #item-7 {
-        grid-row-start: 6;
-        grid-column-start: 1;
-
-        grid-row-end: 7;
-        grid-column-end: 2;
-      }
-
-      .grid-item {
-        max-width: 100%;
-        border-top: none;
-        border-right: 1px solid #4b5563;
-        border-left: 1px solid #4b5563;
-      }
-    }
-  }
-
-  .examples {
-    padding: 40px 0;
-
-    .heading {
-      h1 {
-        @include font(24px, 28px, 500);
-        margin-bottom: 40px;
-      }
-    }
-
-    .swiper-buttons {
-      display: none;
-    }
-
-    .big-examples-swiper {
-      height: 4400px;
-    }
-
-    .work-info {
-      margin-top: 28px;
-      padding: 0;
-
-      .work-name {
-        h1 {
-          @include font(17px, 28px, 400);
-        }
-      }
-
-      .work-description {
-        p {
-          @include font(15px, 24px, 400);
-          color: #5e5f62;
-        }
-      }
-    }
-
-    .img-examples-swiper {
-      .img-swipe-btn {
-        width: 24px;
-        height: 24px;
-
-        img {
-          width: 7px;
-        }
-      }
-
-      .img-swipe-prev {
-        left: 5px;
-      }
-
-      .img-swipe-next {
-        right: 5px;
-      }
-    }
-  }
-
-  .before-after {
-    padding: 40px 0;
-    min-height: 900px;
-
-    .heading {
-      margin-bottom: 48px;
-
-      h1 {
-        @include font(20px, 24px, 500);
-      }
-    }
-
-    .wrapper-desc-slider-before {
-      flex-direction: column;
-
-      .desc {
-        p {
-          @include font(20px, 24px, 500);
-          color: #5e5f62;
-        }
-      }
-
-      .before-after-cont {
-        overflow: hidden;
-        width: 328px;
-        height: 184px;
-        margin-inline: auto;
-
-        .img {
-          left: -1px;
-          background-size: 328px 100%;
-        }
-
-        .slider-button {
-          width: 35px;
-
-          &::before {
-            padding: 4px;
-          }
-
-          &::after {
-            padding: 4px;
-          }
-        }
-      }
-    }
-
-    .wrapper-btn-slider-before {
-      flex-direction: column;
-      margin-top: 48px;
-
-      .desc-btn {
-        max-width: 100%;
-
-        button {
-          width: 100%;
-          margin-top: 28px;
-        }
-      }
-
-      .before-after-cont-2 {
-        overflow: hidden;
-        width: 328px;
-        height: 184px;
-        margin-inline: auto;
-
-        .img {
-          left: -1px;
-          background-size: 328px 100%;
-        }
-
-        .slider-button-2 {
-          width: 35px;
-
-          &::before {
-            padding: 4px;
-          }
-
-          &::after {
-            padding: 4px;
-          }
-        }
-      }
-    }
-  }
-
-  .form {
-    padding: 40px 0;
-
-    .heading {
-      margin-bottom: 60px;
-      max-width: 90%;
-
-      h1 {
-        @include font(20px, 28px, 500);
-        color: white;
-      }
-    }
-
-    .form-wrapper {
-      form {
-        flex-direction: column;
-        align-items: center;
-
-        input {
-          max-width: 100%;
-          padding: 10px 0;
-        }
-
-        input#name {
-          margin-right: 0;
-          margin-bottom: 40px;
-        }
-
-        input#submit {
-          margin-left: 0;
-          margin-top: 60px;
-          max-width: 100%;
-        }
-      }
-    }
-  }
-
-  .work {
-    padding: 40px 0;
-
-    .heading {
-      h1 {
-        @include font(28px, 32px, 500);
-        margin-bottom: 24px;
-
-        span {
-          @include font(28px, 32px, 500);
-          color: #047481;
-        }
-      }
-    }
-
-    .first-floor {
-      flex-direction: column;
-
-      .img-wrapper {
-        margin-top: 40px;
-      }
-    }
-
-    .second-floor {
-      flex-direction: column;
-      margin-top: 40px;
-
-      .work-item {
-        padding: 28px 3px;
-
-        .title {
-          h2 {
-            @include font(15px, 24px, 500);
-          }
-
-          p {
-            @include font(13px, 20px, 300);
-            color: #5e5f62;
-          }
-        }
-
-        img {
-          width: 30px;
-        }
-      }
-
-      .heading {
-        margin-top: 60px;
-
-        h1 {
-          @include font(28px, 32px, 400);
-
-          span {
-            @include font(28px, 32px, 400);
-            color: #047481;
-          }
-        }
-
-        .btns {
-          margin-top: 48px;
-        }
-      }
-    }
-  }
-
-  footer {
-    padding: 40px 0;
-
-    .footer-cont {
-      flex-direction: column;
-      align-items: start;
-      gap: 48px;
-    }
-
-    .heading {
-      h1 {
-        @include font(28px, 32px, 500);
-
-        span {
-          @include font(28px, 32px, 500);
-          color: #047481;
-        }
-      }
-    }
-
-    .contacts {
-      a {
-        font-size: 24px;
-      }
-    }
-  }
-
-  .custom-product {
-    .custom-product-btn {
-    }
-
-    .wrapper-cont {
-      flex-direction: column;
-
-      .img-wrap {
-        max-width: 100%;
-      }
-
-      .title-wrap {
-        max-width: 100%;
-
-        h1 {
-          @include font(24px, 25px, 500);
-          color: #3a4620;
-        }
-
-        p {
-          @include font(12px, 16px, 300);
-        }
-
-        li {
-          @include font(12px, 16px, 300);
-        }
-
-        h2 {
-          @include font(12px, 16px, 500);
-
-          color: #3a4620;
-        }
-      }
-    }
-
-    .wrapper-info {
-      margin-top: 22px;
-      flex-direction: column;
-
-      .first-col {
-        max-width: 100%;
-
-        h2 {
-          @include font(12px, 16px, 500);
-
-          color: #3a4620;
-        }
-
-        p {
-          @include font(12px, 16px, 300);
-
-          span {
-            @include font(12px, 16px, 300);
-
-            font-weight: bolder;
-          }
-        }
-
-        li {
-          @include font(12px, 16px, 300);
-        }
-      }
-    }
-
-    .wrapper-cards {
-      flex-direction: column;
-
-      .card-custom {
-        max-width: 100%;
-        height: auto;
-      }
-    }
-
-    .wrapper-big-cards {
-      flex-direction: column;
-
-      .big-card {
-        max-width: 100%;
-        height: 330px;
-
-        .for-linear {
-          bottom: -30px;
-          padding: 12px;
-          gap: 8px;
-
-          a {
-            max-width: 100%;
-            width: 100%;
-            text-align: center;
-          }
-        }
-
-        h2 {
-          @include font(20px, 20px, 500);
-          color: white;
-        }
-        p {
-          @include font(16px, 20px, 300);
-          color: white;
-        }
-      }
-    }
-
-    .wrapper-solutions {
-      margin-top: 60px;
-
-      .heading {
-        h1 {
-          @include font(24px, 25px, 500);
-        }
-      }
-
-      .solution-cards {
-        gap: 50px;
-        margin-top: 48px;
-        flex-direction: column;
-
-        .solution-card {
-          max-width: 100%;
-        }
-      }
-    }
-  }
-
-  .custom-modal {
-    background-color: white;
-    max-width: 1000px;
-
-    .wrapper-modal {
-      display: flex;
-      gap: 40px;
-
-      img {
-        max-width: 220px;
-        width: 100%;
-        height: 260px;
-        object-fit: contain;
-      }
-
-      .title {
-        h1 {
-          @include font(32px, normal, 500);
-          color: #3a4620;
-          margin-bottom: 12px;
-        }
-
-        p {
-          @include font(16px, 140%, 300);
-        }
-      }
-    }
-  }
-
-  .custom-dialog-modal {
-    max-width: 1000px !important;
   }
 }
