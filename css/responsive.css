@@ -6,6 +6,7 @@
     display: flex;
     align-items: center;
     order: 3;
+    z-index: 101;
   }
   .hamb__field {
     padding: 10px 10px;
@@ -22,7 +23,7 @@
   }
   .popup {
     position: fixed;
-    top: 75px;
+    top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
@@ -51,11 +52,14 @@
     display: flex;
     padding-inline: 42px;
   }
+  .popup .menu > li.line-li {
+    padding-inline: 35px;
+  }
   .popup .menu > li > .line {
     width: 100%;
     height: 1px;
     background: rgba(0, 0, 0, 0.22);
-    margin: 48px 0;
+    margin: 38px 0;
   }
   .popup .menu > li > a {
     margin-right: auto;
@@ -89,6 +93,9 @@
     width: 100%;
     height: 100%;
   }
+  header .menu li.icon-search {
+    display: none;
+  }
   header .phone-search {
     order: 2;
     display: flex;
@@ -114,5 +121,37 @@
   }
   .cont {
     padding-inline: 5px;
+  }
+  .home {
+    position: relative;
+    top: 70px;
+    padding: 70px 0;
+  }
+  .home .heading h1 {
+    font-size: 20px;
+    color: #222;
+    line-height: 20px;
+    font-weight: 500;
+  }
+  .home .heading .with-margin {
+    margin-left: auto;
+  }
+  .home .home-line {
+    margin: 14px 0;
+  }
+  .home .wrapper-video {
+    width: 100%;
+    height: 514px;
+    overflow: hidden;
+    margin-top: 40px;
+  }
+  .home video {
+    margin: 0;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+    width: auto;
+    height: 100%;
   }
 }/*# sourceMappingURL=responsive.css.map */

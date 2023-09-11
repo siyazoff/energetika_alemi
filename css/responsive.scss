@@ -1,6 +1,6 @@
 $manrope: "Jost";
-$blue: #047481;
-$darkblue: #111928;
+$lightgreen: #8fcf21;
+$green: #076324;
 $gray: #5e5f62;
 $black: #222;
 
@@ -23,6 +23,7 @@ $black: #222;
     display: flex;
     align-items: center;
     order: 3;
+    z-index: 101;
   }
 
   .hamb__field {
@@ -42,7 +43,7 @@ $black: #222;
 
   .popup {
     position: fixed;
-    top: 75px;
+    top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
@@ -74,11 +75,15 @@ $black: #222;
     padding-inline: 42px;
   }
 
+  .popup .menu > li.line-li {
+    padding-inline: 35px;
+  }
+
   .popup .menu > li > .line {
     width: 100%;
     height: 1px;
     background: rgba(0, 0, 0, 0.22);
-    margin: 48px 0;
+    margin: 38px 0;
   }
 
   .popup .menu > li > a {
@@ -121,6 +126,12 @@ $black: #222;
       }
     }
 
+    .menu {
+      li.icon-search {
+        display: none;
+      }
+    }
+
     .phone-search {
       order: 2;
       display: flex;
@@ -150,5 +161,40 @@ $black: #222;
 
   .cont {
     padding-inline: 5px;
+  }
+
+  .home {
+    position: relative;
+    top: 70px;
+    padding: 70px 0;
+
+    .heading {
+      h1 {
+        @include font(20px, 20px, 500);
+      }
+
+      .with-margin {
+        margin-left: auto;
+      }
+    }
+
+    .home-line {
+      margin: 14px 0;
+    }
+
+    .wrapper-video {
+      width: 100%;
+      height: 514px;
+      overflow: hidden;
+      margin-top: 40px;
+    }
+
+    video {
+      margin: 0;
+      object-fit: contain;
+      object-position: center;
+      width: auto;
+      height: 100%;
+    }
   }
 }
