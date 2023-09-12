@@ -534,4 +534,76 @@ $black: #222;
       grid-column-end: 6;
     }
   }
+
+  .news {
+    position: relative;
+    padding: 50px 0;
+
+    .heading {
+      padding: 15px 0 0 0;
+
+      h1 {
+        @include font(14px, 14px, 500);
+      }
+
+      .wrapper-page {
+        a {
+          p {
+            @include font(14px, 14px, 500);
+            color: #0062aa;
+            display: block;
+          }
+        }
+        p {
+          display: none;
+        }
+      }
+    }
+
+    .wrapper-news {
+      margin-left: 0;
+      margin-top: 30px;
+      overflow-x: scroll;
+      display: flex;
+      gap: 20px;
+
+      .news-item {
+        display: flex;
+        border-bottom: none;
+        padding: 0;
+        flex-direction: column;
+        flex-shrink: 0;
+
+        .date {
+          p {
+            @include font(14px, 14px, 500);
+          }
+        }
+
+        .img-desc {
+          gap: 16px;
+          margin-left: 0;
+          margin-right: 0;
+          flex-direction: column;
+          margin-top: 16px;
+
+          .desc {
+            max-width: 291px;
+
+            h1 {
+              @include font(16px, 16px, 500);
+            }
+
+            p {
+              @include font(14px, 16px, 400);
+            }
+          }
+        }
+
+        a {
+          margin-top: 16px;
+        }
+      }
+    }
+  }
 }

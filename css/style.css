@@ -645,6 +645,102 @@ header .phone-search {
   grid-column-end: 2;
 }
 
+.news {
+  position: relative;
+  padding: 100px 0;
+}
+.news .heading {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #076324;
+  padding: 24px 0 0 0;
+}
+.news .heading h1 {
+  margin: 0;
+  font-size: 16px;
+  color: #222;
+  line-height: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.news .heading .wrapper-page {
+  display: flex;
+  gap: 50px;
+}
+.news .heading .wrapper-page a p {
+  font-size: 16px;
+  color: #222;
+  line-height: 16px;
+  font-weight: 500;
+  color: #0062aa;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  display: block;
+}
+.news .heading .wrapper-page p {
+  font-size: 16px;
+  color: #222;
+  line-height: 16px;
+  font-weight: 500;
+  display: block;
+}
+.news .wrapper-news {
+  margin-left: 295px;
+  margin-top: 50px;
+}
+.news .wrapper-news .news-item {
+  display: flex;
+  border-bottom: 1px solid #076324;
+  padding: 20px 0;
+}
+.news .wrapper-news .news-item .date p {
+  font-size: 14px;
+  color: #222;
+  line-height: 14px;
+  font-weight: 500;
+}
+.news .wrapper-news .news-item .img-desc {
+  display: flex;
+  gap: 20px;
+  margin-left: 70px;
+  margin-right: 60px;
+}
+.news .wrapper-news .news-item .img-desc img {
+  max-width: 291px;
+  height: 100%;
+  width: 100%;
+}
+.news .wrapper-news .news-item .img-desc .desc {
+  max-width: 305px;
+}
+.news .wrapper-news .news-item .img-desc .desc h1 {
+  font-size: 20px;
+  color: #222;
+  line-height: 20px;
+  font-weight: 500;
+}
+.news .wrapper-news .news-item .img-desc .desc p {
+  font-size: 14px;
+  color: #222;
+  line-height: 16px;
+  font-weight: 400;
+}
+.news .wrapper-news .news-item a {
+  font-size: 14px;
+  color: #222;
+  line-height: 14px;
+  font-weight: 500;
+  color: #0062aa;
+  transition: all 0.3s;
+}
+.news .wrapper-news .news-item a:hover {
+  color: #076324;
+  transition: all 0.3s;
+}
+.news .wrapper-news .news-item:last-child {
+  border: none;
+}
+
 .modal-body {
   position: relative;
   z-index: 1;
