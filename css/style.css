@@ -312,6 +312,9 @@ header .phone-search {
 .home video {
   margin-top: 50px;
 }
+.home video::-webkit-media-controls {
+  display: none !important;
+}
 
 .services {
   position: relative;

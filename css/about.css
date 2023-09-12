@@ -1,0 +1,109 @@
+.page_about {
+  padding: 130px 0;
+}
+.page_about .heading .bread-crumbs {
+  display: flex;
+  gap: 10px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.page_about .heading .bread-crumbs .slash {
+  margin: 0;
+  height: -moz-fit-content;
+  height: fit-content;
+  line-height: 16px;
+}
+.page_about .heading .bread-crumbs h1 {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.page_about .heading .bread-crumbs h1.prev {
+  color: #7d7d7d;
+}
+.page_about .wrapper-img {
+  position: relative;
+}
+.page_about .wrapper-img .bigger-vid {
+  max-width: 675px;
+  height: 100%;
+}
+.page_about .wrapper-img h3 {
+  position: absolute;
+  bottom: 1px;
+  right: 218px;
+}
+.page_about .wrapper-text-btn a {
+  font-size: 16px;
+  color: #222;
+  line-height: 26px;
+  font-weight: 700;
+  color: #8fcf21;
+}
+
+.need_know {
+  position: relative;
+  padding: 100px 0;
+  background-color: #222222;
+}
+.need_know .heading {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #a7a7a7;
+  padding: 24px 0 0 0;
+}
+.need_know .heading h1 {
+  font-size: 16px;
+  color: #222;
+  line-height: 16px;
+  font-weight: 500;
+  color: white;
+}
+.need_know .wrapper .know {
+  display: flex;
+  border-bottom: 1px solid white;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  align-items: end;
+}
+.need_know .wrapper .know .content {
+  max-width: 524px;
+  width: 100%;
+  margin-left: auto;
+  display: flex;
+  gap: 30px;
+}
+.need_know .wrapper .know .content .number {
+  font-size: 32px;
+  color: #222;
+  line-height: 32px;
+  font-weight: 300;
+  margin: 0;
+  font-style: italic;
+  color: #8fcf21;
+}
+.need_know .wrapper .know .content .desc h1 {
+  font-size: 32px;
+  color: #222;
+  line-height: 32px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 30px;
+}
+.need_know .wrapper .know .content .desc p {
+  font-size: 16px;
+  color: #222;
+  line-height: 20px;
+  font-weight: 400;
+  color: white;
+}
+.need_know .wrapper .know:last-child {
+  border: none;
+}
+.need_know .wrapper .know a {
+  font-size: 16px;
+  color: #222;
+  line-height: 26px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #8fcf21;
+}/*# sourceMappingURL=about.css.map */

@@ -11,17 +11,19 @@
     <title>ENERGETIKA ALEMI</title>
 
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/about.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/r-about.css" />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/jquery-ui.css" />
     <link rel="stylesheet" href="css/aos.css" />
 
-    <!-- fonts -->
+    <!-- fonts  -->
+
     <link rel="stylesheet" href="src/fonts/stylesheet.css" />
 
-    <!-- cdn links  -->
-
+    <!-- cdn css  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -204,104 +206,15 @@
     </header>
     <!-- !header ends  -->
 
-    <!-- ! home starts  -->
-    <section class="home" id="home">
-      <div class="cont">
-        <div class="heading">
-          <h1>Электромонтажные работы</h1>
-          <div class="home-line"></div>
-          <h1>и испытания</h1>
-          <div class="home-line"></div>
-          <h1 class="with-margin">электрооборудования</h1>
-        </div>
-        <div class="wrapper-video">
-          <video loop autoplay muted playsinline width="100%">
-            <source src="src/video/main.mp4" type="video/mp4" />
-            <source src="src/video/main.webm" type="video/webm" />
-            Ваш браузер не поддерживает встроенные видео :(
-          </video>
-        </div>
-      </div>
-    </section>
-    <!-- ! home ends  -->
-
-    <!-- ! services starts  -->
-    <section class="services" id="services">
-      <div class="cont">
-        <div class="heading">
-          <h1>Группы товаров и услуг</h1>
-          <div class="wrapper-page">
-            <a href="#"><p>Все услуги</p></a>
-            <p>01</p>
-          </div>
-        </div>
-
-        <div class="grid">
-          <a class="grid-item" href="#" id="item-0">&nbsp;</a>
-          <a class="grid-item" href="#" id="item-1">
-            <div class="title">
-              <p>
-                Испытание средств<br />
-                индивидуальной защиты СИЗ
-              </p>
-            </div>
-          </a>
-          <a class="grid-item" href="#" id="item-2">
-            <div class="title">
-              <p>
-                Испытание<br />
-                РП, ТП, КТП
-              </p>
-            </div>
-          </a>
-          <a class="grid-item" href="#" id="item-3">
-            <div class="title">
-              <p>
-                Определение место<br />
-                повреждения (ОМП)
-              </p>
-            </div>
-          </a>
-          <a class="grid-item" href="#" id="item-4">&nbsp;</a>
-          <a class="grid-item" href="#" id="item-5">
-            <div class="title">
-              <p>
-                Профилактические, приемо- <br />
-                сдаточные испытание
-              </p>
-            </div>
-          </a>
-          <a class="grid-item" href="#" id="item-6">
-            <div class="title">
-              <p>
-                Испытание <br />
-                кабельных линий
-              </p>
-            </div>
-          </a>
-          <a class="grid-item" href="#" id="item-7">
-            <div class="title">
-              <p>
-                Техническое обслуживание <br />
-                трансформаторных подстанций
-              </p>
-            </div>
-          </a>
-          <a class="grid-item" href="#" id="item-8">
-            <div class="title">
-              <p>Услуги по<br />энергоаудиту</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- ! services ends  -->
-
     <!-- ! about starts -->
-    <section class="about" id="about">
+    <section class="about page_about" id="about">
       <div class="cont">
         <div class="heading">
-          <h1>О нас</h1>
+          <div class="bread-crumbs">
+            <a href="index.html"><h1 class="prev">Главная</h1></a>
+            <p class="slash">/</p>
+            <h1>О нас</h1>
+          </div>
           <p>
             Гарантией безопасной и бесперебойной работы электросети на любом
             объекте являются своевременные проверки и профессиональный контроль
@@ -339,7 +252,7 @@
         </div>
         <div class="wrapper-img">
           <img class="smaller-img" src="src/img/about-1.jpg" alt="a-1" />
-          <img class="bigger-img" src="src/img/about-2.jpg" alt="a-2" />
+          <img class="bigger-vid" src="src/img/about-vid.jpg" alt="a-2" />
           <h3>2017-2018</h3>
         </div>
         <div class="wrapper-text-btn">
@@ -348,134 +261,70 @@
             лабораторию и произвели более 5000 тысяч испытаний средств защиты по
             Казахстану.
           </p>
-          <a href="#">Читать далее ━</a>
+          <a href>2019 ━</a>
         </div>
       </div>
     </section>
     <!-- ! about ends -->
 
-    <!-- ! advantages starts  -->
-    <section class="advantages" id="advantages">
+    <!-- ! need_know starts  -->
+    <section class="need_know" id="need_know">
       <div class="cont">
         <div class="heading">
-          <h1>
-            Преимущества заказа <br />
-            энергетических услуг у нас
-          </h1>
-          <h1>03</h1>
+          <h1>Что нужно знать о нашей компании?</h1>
+          <h1>02</h1>
         </div>
 
-        <div class="grid">
-          <div class="grid-item" id="item-0">
-            <p>01</p>
-            <p class="desc">
-              Работы проводятся по всей территории Казахстана, возможен выезд в
-              страны СНГ
-            </p>
+        <div class="wrapper">
+          <div class="know">
+            <div class="content">
+              <h1 class="number">(01)</h1>
+              <div class="desc">
+                <h1>Наши клиенты</h1>
+                <p>
+                  Юридические лица, строительные компании, жилые комплексы,
+                  детские сады, школы, торговые центры ,частные лица, возраст от
+                  28 до 55 лет, мужской, владельцы бизнеса.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="grid-item" id="item-1">
-            <p>02</p>
-            <p class="desc">
-              За год специалисты нашей компании провели более 5 тысяч испытаний
-              средств защиты
-            </p>
+          <div class="know">
+            <div class="content">
+              <h1 class="number">(02)</h1>
+              <div class="desc">
+                <h1>Преимущества</h1>
+                <p>Цена, Качество, Скорость выполнение работ.</p>
+              </div>
+            </div>
           </div>
-          <div class="grid-item" id="item-2">
-            <p>03</p>
-            <p class="desc">
-              За год специалисты нашей компании провели более 5 тысяч испытаний
-              средств защиты
-            </p>
+          <div class="know">
+            <div class="content">
+              <h1 class="number">(03)</h1>
+              <div class="desc">
+                <h1>Задача</h1>
+                <p>Решаем вашу головную боль в элекричестве</p>
+              </div>
+            </div>
           </div>
-          <div class="grid-item" id="item-3">
-            <p>04</p>
-            <p class="desc">
-              Огромный опыт, позволяющий решать задачи высокого уровня
-              сложности.
-            </p>
-          </div>
-          <div class="grid-item" id="item-4">
-            <p>05</p>
-            <p class="desc">
-              Проведение всех работ в соответствии с техническим заданием, в
-              котором учтены пожелания заказчика
-            </p>
+          <div class="know">
+            <a href="#services">Ознакомиться с услугами —</a>
+            <div class="content content-4">
+              <h1 class="number">(04)</h1>
+              <div class="desc">
+                <h1>Успехи</h1>
+                <p>
+                  Гордимся, что за год сделали более 5000 испытании средств
+                  защиты, что обеспечивает как минимум 1000 человек безопасной
+                  работой в электричестве.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- ! advantages ends  -->
-
-    <!-- ! news starts -->
-    <section class="news" id="news">
-      <div class="cont">
-        <div class="heading">
-          <h1>Новости</h1>
-          <div class="wrapper-page">
-            <a href="#"><p>Все новости</p></a>
-            <p>04</p>
-          </div>
-        </div>
-
-        <div class="wrapper-news">
-          <!-- в дальнейшем сделать обрезку текста с многоточием -->
-          <div class="news-item">
-            <div class="date">
-              <p>14.07.2023</p>
-            </div>
-            <div class="img-desc">
-              <img src="src/img/news-1.jpg" alt="n-1" />
-              <div class="desc">
-                <h1>
-                  Как выполняются профилактические и приемо-сдаточные испытания
-                </h1>
-                <p>
-                  При сдаче нового объекта, либо после ремонта на действующем
-                  необходимо выполнять приемо-сдаточные испытания...
-                </p>
-              </div>
-            </div>
-            <a href="#">Читать дальше ━</a>
-          </div>
-          <div class="news-item">
-            <div class="date">
-              <p>14.07.2023</p>
-            </div>
-            <div class="img-desc">
-              <img src="src/img/news-2.jpg" alt="n-2" />
-              <div class="desc">
-                <h1>Какая периодичность осмотров РП, ТП, КТП</h1>
-                <p>
-                  Осмотр и обслуживание силовых трансформаторов и
-                  распределительных станций выполняется для того, чтобы продлить
-                  период эксплуатации оборудования на максимально длительный
-                  срок...
-                </p>
-              </div>
-            </div>
-            <a href="#">Читать дальше ━</a>
-          </div>
-          <div class="news-item">
-            <div class="date">
-              <p>14.07.2023</p>
-            </div>
-            <div class="img-desc">
-              <img src="src/img/news-3.jpg" alt="n-3" />
-              <div class="desc">
-                <h1>Методы определения места повреждения кабеля</h1>
-                <p>
-                  Кабельные линии регулярно поддаются воздействию агрессивных
-                  внешних факторов. Это могут быть сдвиги грунта, стихийные
-                  бедствия, окончание установленного срока...
-                </p>
-              </div>
-            </div>
-            <a href="#">Читать дальше ━</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ! news ends -->
+    <!-- ! need_know ends  -->
 
     <!-- ! order starts  -->
     <section class="order" id="order">

@@ -1,0 +1,79 @@
+@media all and (max-width: 768px) {
+  .page_about {
+    padding: 100px 0 50px;
+  }
+  .page_about .heading .bread-crumbs .slash {
+    display: block;
+  }
+  .page_about .wrapper-img .bigger-vid {
+    max-width: 100%;
+  }
+  .page_about .wrapper-img h3 {
+    bottom: -16px;
+    right: 0px;
+  }
+  .page_about .wrapper-text-btn a {
+    font-size: 16px;
+    color: #222;
+    line-height: 26px;
+    font-weight: 700;
+    color: #8fcf21;
+  }
+  .need_know {
+    padding: 50px 0 0 0;
+  }
+  .need_know .heading {
+    padding: 15px 0 0 0;
+  }
+  .need_know .heading h1 {
+    font-size: 14px;
+    color: #222;
+    line-height: 16px;
+    font-weight: 500;
+    color: white;
+  }
+  .need_know .wrapper .know {
+    padding-bottom: 30px;
+    margin-top: 26px;
+    flex-direction: column-reverse;
+    gap: 60px;
+  }
+  .need_know .wrapper .know .content {
+    max-width: 100%;
+    gap: 49px;
+  }
+  .need_know .wrapper .know .content .number {
+    font-size: 20px;
+    color: #222;
+    line-height: 20px;
+    font-weight: 300;
+    font-style: italic;
+    color: #8fcf21;
+  }
+  .need_know .wrapper .know .content .desc h1 {
+    font-size: 20px;
+    color: #222;
+    line-height: 32px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .need_know .wrapper .know .content .desc p {
+    font-size: 14px;
+    color: #222;
+    line-height: 14px;
+    font-weight: 400;
+    color: white;
+  }
+  .need_know .wrapper .know .content-4 {
+    border-bottom: 1px solid white;
+    padding-bottom: 30px;
+  }
+  .need_know .wrapper .know a {
+    font-size: 14px;
+    color: #222;
+    line-height: 14px;
+    font-weight: 500;
+    color: #8fcf21;
+  }
+}/*# sourceMappingURL=r-about.css.map */

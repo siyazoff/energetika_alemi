@@ -1,0 +1,126 @@
+$manrope: "Jost";
+$lightgreen: #8fcf21;
+$green: #076324;
+$gray: #5e5f62;
+$black: #222;
+
+@mixin font($titleVal, $lineHeight, $fontWeight) {
+  font-size: $titleVal;
+  color: $black;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+}
+
+.page_about {
+  padding: 130px 0;
+
+  .heading {
+    .bread-crumbs {
+      display: flex;
+      gap: 10px;
+      height: fit-content;
+
+      .slash {
+        margin: 0;
+        height: fit-content;
+        line-height: 16px;
+      }
+
+      h1 {
+        height: fit-content;
+      }
+
+      h1.prev {
+        color: #7d7d7d;
+      }
+    }
+  }
+
+  .wrapper-img {
+    position: relative;
+
+    .bigger-vid {
+      max-width: 675px;
+      height: 100%;
+    }
+
+    h3 {
+      position: absolute;
+      bottom: 1px;
+      right: 218px;
+    }
+  }
+
+  .wrapper-text-btn {
+    a {
+      @include font(16px, 26px, 700);
+      color: $lightgreen;
+    }
+  }
+}
+
+.need_know {
+  position: relative;
+  padding: 100px 0;
+  background-color: #222222;
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #a7a7a7;
+    padding: 24px 0 0 0;
+
+    h1 {
+      @include font(16px, 16px, 500);
+      color: white;
+    }
+  }
+
+  .wrapper {
+    .know {
+      display: flex;
+      border-bottom: 1px solid white;
+      padding-bottom: 50px;
+      margin-top: 50px;
+      align-items: end;
+
+      .content {
+        max-width: 524px;
+        width: 100%;
+        margin-left: auto;
+        display: flex;
+        gap: 30px;
+
+        .number {
+          @include font(32px, 32px, 300);
+          margin: 0;
+          font-style: italic;
+          color: $lightgreen;
+        }
+
+        .desc {
+          h1 {
+            @include font(32px, 32px, 500);
+            color: white;
+            margin-bottom: 30px;
+          }
+
+          p {
+            @include font(16px, 20px, 400);
+            color: white;
+          }
+        }
+      }
+
+      &:last-child {
+        border: none;
+      }
+
+      a {
+        @include font(16px, 26px, 500);
+        text-transform: uppercase;
+        color: $lightgreen;
+      }
+    }
+  }
+}

@@ -343,6 +343,10 @@ header {
 
   video {
     margin-top: 50px;
+
+    &::-webkit-media-controls {
+      display: none !important;
+    }
   }
 }
 

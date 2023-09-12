@@ -1,0 +1,103 @@
+$manrope: "Jost";
+$lightgreen: #8fcf21;
+$green: #076324;
+$gray: #5e5f62;
+$black: #222;
+
+@mixin font($titleVal, $lineHeight, $fontWeight) {
+  font-size: $titleVal;
+  color: $black;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+}
+
+@media (max-width: 1000px) {
+}
+
+@media all and (max-width: 768px) {
+  .page_about {
+    padding: 100px 0 50px;
+
+    .heading {
+      .bread-crumbs {
+        .slash {
+          display: block;
+        }
+      }
+    }
+
+    .wrapper-img {
+      .bigger-vid {
+        max-width: 100%;
+      }
+
+      h3 {
+        bottom: -16px;
+        right: 0px;
+      }
+    }
+
+    .wrapper-text-btn {
+      a {
+        @include font(16px, 26px, 700);
+        color: $lightgreen;
+      }
+    }
+  }
+
+  .need_know {
+    padding: 50px 0 0 0;
+
+    .heading {
+      padding: 15px 0 0 0;
+
+      h1 {
+        @include font(14px, 16px, 500);
+        color: white;
+      }
+    }
+
+    .wrapper {
+      .know {
+        padding-bottom: 30px;
+        margin-top: 26px;
+        flex-direction: column-reverse;
+        gap: 60px;
+
+        .content {
+          max-width: 100%;
+          gap: 49px;
+
+          .number {
+            @include font(20px, 20px, 300);
+            font-style: italic;
+            color: $lightgreen;
+          }
+
+          .desc {
+            h1 {
+              @include font(20px, 32px, 500);
+              color: white;
+              margin-bottom: 20px;
+            }
+
+            p {
+              @include font(14px, 14px, 400);
+              color: white;
+            }
+          }
+        }
+
+        .content-4 {
+          border-bottom: 1px solid white;
+          padding-bottom: 30px;
+        }
+
+        a {
+          @include font(14px, 14px, 500);
+          color: $lightgreen;
+        }
+      }
+    }
+  }
+}
