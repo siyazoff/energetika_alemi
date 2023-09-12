@@ -521,4 +521,66 @@
   .news .wrapper-news .news-item a {
     margin-top: 16px;
   }
+  .order {
+    padding-bottom: 50px;
+  }
+  .order .heading {
+    padding: 15px 0 0 0;
+  }
+  .order .heading h1 {
+    font-size: 14px;
+    color: #222;
+    line-height: 14px;
+    font-weight: 500;
+  }
+  .order .title {
+    margin-top: 44px;
+    margin-bottom: 52px;
+  }
+  .order .title a {
+    font-size: 20px;
+    color: #222;
+    line-height: 20px;
+    font-weight: 500;
+    color: #8fcf21;
+  }
+  .order .title a.phone-link {
+    margin-left: auto;
+    margin-top: 14px;
+  }
+  .order .wrapper-form {
+    margin-left: 0;
+  }
+  .order .wrapper-form form .user-box input {
+    margin-bottom: 20px;
+    background: transparent;
+    font-size: 14px;
+    color: #222;
+    line-height: 14px;
+    font-weight: 400;
+    color: #303030;
+  }
+  .order .wrapper-form form .user-box label {
+    font-size: 14px;
+    color: #222;
+    line-height: 14px;
+    font-weight: 400;
+    color: #303030;
+  }
+  .order .wrapper-form form .user-box-1 {
+    margin-right: 0;
+  }
+  .order .wrapper-form form .user-box-1,
+  .order .wrapper-form form .user-box-2 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  .order .wrapper-form form .submit-user {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #222;
+    line-height: 14px;
+    font-weight: 500;
+    color: #0062aa;
+  }
 }/*# sourceMappingURL=responsive.css.map */

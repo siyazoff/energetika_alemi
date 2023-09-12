@@ -741,6 +741,119 @@ header .phone-search {
   border: none;
 }
 
+.order {
+  position: relative;
+  padding-bottom: 100px;
+}
+.order .heading {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #076324;
+  padding: 24px 0 0 0;
+}
+.order .heading h1 {
+  font-size: 16px;
+  color: #222;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+}
+.order .title {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+.order .title a {
+  font-size: 40px;
+  color: #222;
+  line-height: 40px;
+  font-weight: 500;
+  color: #8fcf21;
+  text-transform: uppercase;
+}
+.order .title a.phone-link {
+  margin-left: 295px;
+  margin-top: 20px;
+}
+.order .wrapper-form {
+  margin-left: 295px;
+}
+.order .wrapper-form form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.order .wrapper-form form .user-box {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+.order .wrapper-form form .user-box input {
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 50px;
+  border: none;
+  border-bottom: 1px solid #303030;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  color: #222;
+  line-height: 16px;
+  font-weight: 400;
+  color: #303030;
+}
+.order .wrapper-form form .user-box input:focus + label {
+  top: -20px;
+  left: 0;
+  font-size: 12px;
+}
+.order .wrapper-form form .user-box input.full + label {
+  top: -20px;
+  left: 0;
+  font-size: 12px;
+}
+.order .wrapper-form form .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #222;
+  line-height: 16px;
+  font-weight: 400;
+  color: #303030;
+  pointer-events: none;
+  transition: all 0.2s;
+}
+.order .wrapper-form form .user-box-1 {
+  margin-right: 39px;
+}
+.order .wrapper-form form .user-box-1,
+.order .wrapper-form form .user-box-2 {
+  flex-basis: 50%;
+  max-width: 453px;
+}
+.order .wrapper-form form .user-box-3 {
+  flex-basis: 100%;
+}
+.order .wrapper-form form .submit-user {
+  margin-top: 50px;
+  background: transparent;
+  font-size: 16px;
+  color: #222;
+  line-height: 26px;
+  font-weight: 500;
+  color: #0062aa;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+.order .wrapper-form form .submit-user:hover {
+  color: #076324;
+  transition: color 0.2s;
+}
+
 .modal-body {
   position: relative;
   z-index: 1;

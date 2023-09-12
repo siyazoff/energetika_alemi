@@ -797,6 +797,121 @@ header {
   }
 }
 
+.order {
+  position: relative;
+  padding-bottom: 100px;
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $green;
+    padding: 24px 0 0 0;
+
+    h1 {
+      @include font(16px, 20px, 500);
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+
+  .title {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+
+    a {
+      @include font(40px, 40px, 500);
+      color: $lightgreen;
+      text-transform: uppercase;
+    }
+
+    a.phone-link {
+      margin-left: 295px;
+      margin-top: 20px;
+    }
+  }
+
+  .wrapper-form {
+    margin-left: 295px;
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+
+      .user-box {
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+
+        input {
+          width: 100%;
+          margin-top: 12px;
+          margin-bottom: 50px;
+          border: none;
+          border-bottom: 1px solid #303030;
+          outline: none;
+          background: transparent;
+          @include font(16px, 16px, 400);
+          color: #303030;
+
+          &:focus + label {
+            top: -20px;
+            left: 0;
+            font-size: 12px;
+          }
+        }
+
+        input.full + label {
+          top: -20px;
+          left: 0;
+          font-size: 12px;
+        }
+
+        label {
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 10px 0;
+          @include font(16px, 16px, 400);
+          color: #303030;
+          pointer-events: none;
+          transition: all 0.2s;
+        }
+      }
+
+      .user-box-1 {
+        margin-right: 39px;
+      }
+
+      .user-box-1,
+      .user-box-2 {
+        flex-basis: 50%;
+        max-width: 453px;
+      }
+
+      .user-box-3 {
+        flex-basis: 100%;
+      }
+
+      .submit-user {
+        margin-top: 50px;
+        background: transparent;
+        @include font(16px, 26px, 500);
+        color: #0062aa;
+        text-transform: uppercase;
+        transition: color 0.2s;
+
+        &:hover {
+          color: $green;
+          transition: color 0.2s;
+        }
+      }
+    }
+  }
+}
+
 footer {
 }
 

@@ -46,4 +46,31 @@ $(document).ready(function () {
     }
     prevScrollpos = currentScrollPos;
   });
+
+  document.addEventListener("change", function (event) {
+    if (event.target && event.target.matches(".change")) {
+      event.preventDefault();
+
+      var inputField = event.target;
+      var inputLabels = document.querySelector(".abs_lab");
+
+      if (inputField.value) {
+        inputLabels.classList.add(".label-focus");
+      } else {
+        inputLabels.classList.remove(".label-focus");
+      }
+    }
+  });
+
+  const inputs = document.querySelectorAll(".change");
+
+  inputs.forEach((input) => {
+    input.addEventListener("blur", (event) => {
+      if (event.target.value.length) {
+        event.target.classList.add("full");
+      } else {
+        event.target.classList.remove("full");
+      }
+    });
+  });
 });

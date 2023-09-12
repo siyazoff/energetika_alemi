@@ -606,4 +606,67 @@ $black: #222;
       }
     }
   }
+
+  .order {
+    padding-bottom: 50px;
+
+    .heading {
+      padding: 15px 0 0 0;
+
+      h1 {
+        @include font(14px, 14px, 500);
+      }
+    }
+
+    .title {
+      margin-top: 44px;
+      margin-bottom: 52px;
+
+      a {
+        @include font(20px, 20px, 500);
+        color: $lightgreen;
+      }
+
+      a.phone-link {
+        margin-left: auto;
+        margin-top: 14px;
+      }
+    }
+
+    .wrapper-form {
+      margin-left: 0;
+
+      form {
+        .user-box {
+          input {
+            margin-bottom: 20px;
+            background: transparent;
+            @include font(14px, 14px, 400);
+            color: #303030;
+          }
+
+          label {
+            @include font(14px, 14px, 400);
+            color: #303030;
+          }
+        }
+
+        .user-box-1 {
+          margin-right: 0;
+        }
+
+        .user-box-1,
+        .user-box-2 {
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+
+        .submit-user {
+          margin-top: 30px;
+          @include font(14px, 14px, 500);
+          color: #0062aa;
+        }
+      }
+    }
+  }
 }
