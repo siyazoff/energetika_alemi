@@ -106,4 +106,80 @@
   font-weight: 500;
   text-transform: uppercase;
   color: #8fcf21;
+}
+
+.certificates {
+  padding: 100px 0;
+  position: relative;
+}
+.certificates .heading {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #076324;
+  padding-top: 24px;
+}
+.certificates .heading h1 {
+  font-size: 16px;
+  color: #222;
+  line-height: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.certificates .wrapper-licenses {
+  display: flex;
+  gap: 202px;
+  margin-top: 70px;
+}
+.certificates .wrapper-licenses h1 {
+  font-size: 16px;
+  color: #222;
+  line-height: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 20px;
+}
+.certificates .wrapper-licenses .items {
+  max-width: 945px;
+  width: 100%;
+}
+.certificates .wrapper-licenses .items .item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0;
+  border-top: 1px solid #7d7d7d;
+  background-color: white;
+  transition: all 0.3s;
+}
+.certificates .wrapper-licenses .items .item .name-pdf {
+  max-width: 344px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.certificates .wrapper-licenses .items .item:hover {
+  background-color: #222222;
+  transition: all 0.3s;
+}
+.certificates .wrapper-licenses .items .item:hover h2 {
+  color: white;
+  transition: all 0.5s;
+}
+.certificates .wrapper-licenses .items .item:last-child {
+  border-bottom: 1px solid #7d7d7d;
+}
+.certificates .wrapper-licenses .items h2 {
+  font-size: 16px;
+  color: #222;
+  line-height: 20px;
+  font-weight: 400;
+  color: #303030;
+  text-transform: uppercase;
+  margin: 0;
+  transition: all 0.5s;
+}
+.certificates .wrapper-certificates {
+  margin-top: 100px;
+  gap: 178px;
 }/*# sourceMappingURL=about.css.map */

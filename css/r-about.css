@@ -76,4 +76,48 @@
     font-weight: 500;
     color: #8fcf21;
   }
+  .certificates {
+    padding: 50px 0;
+  }
+  .certificates .heading {
+    padding-top: 15px;
+  }
+  .certificates .heading h1 {
+    font-size: 14px;
+    color: #222;
+    line-height: 14px;
+    font-weight: 500;
+  }
+  .certificates .wrapper-licenses {
+    gap: 30px;
+    margin-top: 30px;
+    flex-direction: column;
+  }
+  .certificates .wrapper-licenses h1 {
+    font-size: 14px;
+    color: #222;
+    line-height: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 0px;
+  }
+  .certificates .wrapper-licenses .items {
+    max-width: 100%;
+  }
+  .certificates .wrapper-licenses .items .item .name-pdf {
+    max-width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .certificates .wrapper-licenses .items h2 {
+    font-size: 14px;
+    color: #222;
+    line-height: 14px;
+    font-weight: 400;
+    color: #303030;
+  }
+  .certificates .wrapper-certificates {
+    margin-top: 50px;
+    gap: 30px;
+  }
 }/*# sourceMappingURL=r-about.css.map */

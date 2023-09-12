@@ -124,3 +124,81 @@ $black: #222;
     }
   }
 }
+
+.certificates {
+  padding: 100px 0;
+  position: relative;
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #076324;
+    padding-top: 24px;
+
+    h1 {
+      @include font(16px, 16px, 500);
+      text-transform: uppercase;
+    }
+  }
+
+  .wrapper-licenses {
+    display: flex;
+    gap: 202px;
+    margin-top: 70px;
+
+    h1 {
+      @include font(16px, 16px, 500);
+      text-transform: uppercase;
+      margin: 0;
+      margin-top: 20px;
+    }
+
+    .items {
+      max-width: 945px;
+      width: 100%;
+
+      .item {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 20px 0;
+        border-top: 1px solid #7d7d7d;
+        background-color: white;
+        transition: all 0.3s;
+
+        .name-pdf {
+          max-width: 344px;
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+        }
+
+        &:hover {
+          background-color: #222222;
+          transition: all 0.3s;
+
+          h2 {
+            color: white;
+            transition: all 0.5s;
+          }
+        }
+
+        &:last-child {
+          border-bottom: 1px solid #7d7d7d;
+        }
+      }
+      h2 {
+        @include font(16px, 20px, 400);
+        color: #303030;
+        text-transform: uppercase;
+        margin: 0;
+        transition: all 0.5s;
+      }
+    }
+  }
+
+  .wrapper-certificates {
+    margin-top: 100px;
+    gap: 178px;
+  }
+}
