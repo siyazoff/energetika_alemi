@@ -220,17 +220,64 @@ header .logo-menu {
   width: 100%;
   height: 79px;
 }
-header .logo-menu a img {
+header .logo-menu a svg {
   width: 82px;
   height: 100%;
   position: relative;
-  top: 10px;
+  top: 15px;
 }
-header .logo-menu .menu li.icon-search {
-  margin-left: 40px;
+header .logo-menu .menu {
+  position: relative;
 }
 header .logo-menu .menu li.phone-li {
   margin-left: 40px;
+}
+header .logo-menu .menu li.search-open {
+  margin-left: 40px;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
+}
+header .logo-menu .menu li.search-open svg path {
+  transition: all 0.5s ease;
+}
+header .logo-menu .menu li.icon-search.active svg {
+  fill: #076324;
+}
+header .logo-menu .menu .search-div {
+  position: absolute;
+  top: -10px;
+  width: 0px;
+  right: 31px;
+  background: white;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+header .logo-menu .menu .search-div .search-section {
+  width: 100%;
+}
+header .logo-menu .menu .search-div .search-section .auto-suggest-submit {
+  display: none;
+}
+header .logo-menu .menu .search-div .search-section form {
+  border: 1px solid #469211;
+  border-radius: 20px;
+  padding: 0 15px;
+}
+header .logo-menu .menu .search-div .search-section form input {
+  border: unset;
+  margin-top: 0;
+}
+header .logo-menu .menu .search-div .search-section input.auto-suggest-front {
+  width: 92%;
+  height: 34px;
+  padding: 5px 10px;
+  font-size: 18px;
+}
+header .logo-menu .menu .search-div.active {
+  width: 700px;
+  pointer-events: all;
+  opacity: 1;
 }
 header .phone-search {
   display: none;
@@ -851,6 +898,178 @@ header .phone-search {
 }
 .order .wrapper-form form .submit-user:hover {
   color: #076324;
+  transition: color 0.2s;
+}
+
+footer {
+  position: relative;
+  padding: 50px 0;
+  background-color: #222222;
+}
+footer .logo-mob svg {
+  display: none;
+}
+footer .navigation {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 164px;
+}
+footer .navigation .logo-wrapper {
+  display: block;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+footer .navigation .logo-wrapper svg {
+  display: block;
+  width: 81px;
+  height: 100%;
+}
+footer .navigation .navigate,
+footer .navigation .address,
+footer .navigation .social-net,
+footer .navigation .work-time {
+  padding: 0;
+}
+footer .navigation .navigate li,
+footer .navigation .address li,
+footer .navigation .social-net li,
+footer .navigation .work-time li {
+  font-size: 14px;
+  color: #222;
+  line-height: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+footer .navigation .navigate li span,
+footer .navigation .address li span,
+footer .navigation .social-net li span,
+footer .navigation .work-time li span {
+  font-size: 14px;
+  color: #222;
+  line-height: 14px;
+  font-weight: 500;
+  color: #7d7d7d;
+}
+footer .navigation .navigate li a,
+footer .navigation .address li a,
+footer .navigation .social-net li a,
+footer .navigation .work-time li a {
+  font-size: 14px;
+  color: #222;
+  line-height: 14px;
+  font-weight: 500;
+  color: #ffffff;
+}
+footer .navigation .navigate li span.small-num,
+footer .navigation .address li span.small-num,
+footer .navigation .social-net li span.small-num,
+footer .navigation .work-time li span.small-num {
+  font-size: 8px;
+  color: #222;
+  line-height: 8px;
+  font-weight: 500;
+  color: #ffffff;
+}
+footer .navigation .navigate .small-li,
+footer .navigation .address .small-li,
+footer .navigation .social-net .small-li,
+footer .navigation .work-time .small-li {
+  display: flex;
+  align-items: start;
+}
+footer .wrapper-form {
+  margin-bottom: 100px;
+}
+footer .wrapper-form .heading {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 121px;
+  border-bottom: 1px solid #7d7d7d;
+  padding-bottom: 24px;
+}
+footer .wrapper-form .heading h1 {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #222;
+  line-height: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0;
+}
+footer .wrapper-form form {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .wrapper-form form input {
+  background: transparent;
+  border-bottom: 1px solid #7d7d7d;
+  font-size: 16px;
+  color: #222;
+  line-height: 16px;
+  font-weight: 400;
+  color: white;
+  margin-top: 20px;
+  padding: 0 0 10px 0;
+}
+footer .wrapper-form form input::-moz-placeholder {
+  color: white;
+}
+footer .wrapper-form form input::placeholder {
+  color: white;
+}
+footer .wrapper-form form #name {
+  flex-basis: 50%;
+  max-width: 605px;
+  margin-right: 30px;
+}
+footer .wrapper-form form #email {
+  flex-basis: 50%;
+  max-width: 605px;
+}
+footer .wrapper-form form #message {
+  flex-basis: 100%;
+  margin-top: 50px;
+}
+footer .wrapper-form form #submit {
+  margin-left: auto;
+  margin-top: 50px;
+  border: none;
+  font-size: 16px;
+  color: #222;
+  line-height: 16px;
+  font-weight: 500;
+  color: white;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+footer .wrapper-form form #submit:hover {
+  color: #076324;
+  transition: color 0.2s;
+}
+footer .copyright {
+  display: flex;
+  border-bottom: 1px solid #7d7d7d;
+  border-top: 1px solid #7d7d7d;
+  padding: 20px 0;
+}
+footer .copyright h2 {
+  font-size: 16px;
+  color: #222;
+  line-height: 16px;
+  font-weight: 400;
+  color: #7d7d7d;
+  margin: 0;
+  transition: color 0.2s;
+}
+footer .copyright h2:nth-child(2) {
+  margin-left: 111px;
+}
+footer .copyright a {
+  margin-left: auto;
+}
+footer .copyright a:hover h2 {
+  color: #fe6400;
   transition: color 0.2s;
 }
 

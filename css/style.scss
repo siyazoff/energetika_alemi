@@ -235,21 +235,76 @@ header {
     height: 79px;
 
     a {
-      img {
+      svg {
         width: 82px;
         height: 100%;
         position: relative;
-        top: 10px;
+        top: 15px;
       }
     }
 
     .menu {
-      li.icon-search {
-        margin-left: 40px;
-      }
+      position: relative;
 
       li.phone-li {
         margin-left: 40px;
+      }
+
+      li.search-open {
+        margin-left: 40px;
+        cursor: pointer;
+        position: relative;
+        z-index: 100;
+      }
+
+      li.search-open svg path {
+        transition: all 0.5s ease;
+      }
+
+      li.icon-search.active svg {
+        fill: $green;
+      }
+
+      .search-div {
+        position: absolute;
+        top: -10px;
+        width: 0px;
+        right: 31px;
+        background: white;
+        transition: all 0.5s ease;
+        opacity: 0;
+
+        .search-section {
+          width: 100%;
+
+          .auto-suggest-submit {
+            display: none;
+          }
+
+          form {
+            border: 1px solid #469211;
+            border-radius: 20px;
+            padding: 0 15px;
+
+            input {
+              border: unset;
+              margin-top: 0;
+            }
+          }
+
+          input.auto-suggest-front {
+            width: 92%;
+            height: 34px;
+            padding: 5px 10px;
+            font-size: 18px;
+          }
+        }
+      }
+
+      .search-div.active {
+        width: 700px;
+        pointer-events: all;
+        opacity: 1;
       }
     }
   }
@@ -913,6 +968,162 @@ header {
 }
 
 footer {
+  position: relative;
+  padding: 50px 0;
+  background-color: #222222;
+
+  .logo-mob {
+    svg {
+      display: none;
+    }
+  }
+
+  .navigation {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 164px;
+
+    .logo-wrapper {
+      display: block;
+      height: fit-content;
+
+      svg {
+        display: block;
+        width: 81px;
+        height: 100%;
+      }
+    }
+
+    .navigate,
+    .address,
+    .social-net,
+    .work-time {
+      padding: 0;
+
+      li {
+        @include font(14px, 14px, 500);
+        color: #ffffff;
+        margin-bottom: 16px;
+
+        span {
+          @include font(14px, 14px, 500);
+          color: #7d7d7d;
+        }
+
+        a {
+          @include font(14px, 14px, 500);
+          color: #ffffff;
+        }
+
+        span.small-num {
+          @include font(8px, 8px, 500);
+          color: #ffffff;
+        }
+      }
+
+      .small-li {
+        display: flex;
+        align-items: start;
+      }
+    }
+  }
+
+  .wrapper-form {
+    margin-bottom: 100px;
+
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 121px;
+      border-bottom: 1px solid #7d7d7d;
+      padding-bottom: 24px;
+
+      h1 {
+        text-transform: uppercase;
+        @include font(16px, 20px, 500);
+        color: #ffffff;
+        margin: 0;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+
+      input {
+        background: transparent;
+        border-bottom: 1px solid #7d7d7d;
+        @include font(16px, 16px, 400);
+        color: white;
+        margin-top: 20px;
+        padding: 0 0 10px 0;
+
+        &::placeholder {
+          color: white;
+        }
+      }
+
+      #name {
+        flex-basis: 50%;
+        max-width: 605px;
+        margin-right: 30px;
+      }
+
+      #email {
+        flex-basis: 50%;
+        max-width: 605px;
+      }
+
+      #message {
+        flex-basis: 100%;
+        margin-top: 50px;
+      }
+
+      #submit {
+        margin-left: auto;
+        margin-top: 50px;
+        border: none;
+        @include font(16px, 16px, 500);
+        color: white;
+        text-transform: uppercase;
+        transition: color 0.2s;
+
+        &:hover {
+          color: $green;
+          transition: color 0.2s;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    display: flex;
+    border-bottom: 1px solid #7d7d7d;
+    border-top: 1px solid #7d7d7d;
+    padding: 20px 0;
+
+    h2 {
+      @include font(16px, 16px, 400);
+      color: #7d7d7d;
+      margin: 0;
+      transition: color 0.2s;
+
+      &:nth-child(2) {
+        margin-left: 111px;
+      }
+    }
+
+    a {
+      margin-left: auto;
+
+      &:hover {
+        h2 {
+          color: #fe6400;
+          transition: color 0.2s;
+        }
+      }
+    }
+  }
 }
 
 .modal-body {

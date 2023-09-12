@@ -82,18 +82,22 @@
   .hamb__field.active .bar:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
   }
-  body.noscroll {
-    overflow: hidden;
-  }
   header .logo-menu {
     width: auto;
   }
-  header .logo-menu a img {
+  header .logo-menu a svg {
     max-width: 44px;
     width: 100%;
     height: 100%;
+    top: 5px;
   }
   header .menu li.icon-search {
+    display: none;
+  }
+  header .menu .search-div {
+    display: none;
+  }
+  header .menu .search-open {
     display: none;
   }
   header .phone-search {
@@ -101,6 +105,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
   }
   header .phone-search ul {
     display: flex;
@@ -115,6 +120,54 @@
     color: #222;
     line-height: 14px;
     font-weight: 400;
+  }
+  header .phone-search li.search-open {
+    margin-left: 0px;
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+  }
+  header .phone-search li.search-open svg path {
+    transition: all 0.5s ease;
+  }
+  header .phone-search li.icon-search.active svg {
+    fill: #076324;
+  }
+  header .phone-search .search-div {
+    position: absolute;
+    top: 27px;
+    width: 0px;
+    right: 30px;
+    background: white;
+    transition: all 0.5s ease;
+    opacity: 0;
+  }
+  header .phone-search .search-div .search-section {
+    width: 100%;
+  }
+  header .phone-search .search-div .search-section .auto-suggest-submit {
+    display: none;
+  }
+  header .phone-search .search-div .search-section form {
+    border: 1px solid #469211;
+    border-radius: 20px;
+    padding: 0 0 0 7px;
+  }
+  header .phone-search .search-div .search-section form input {
+    border: unset;
+    margin-top: 0;
+  }
+  header .phone-search .search-div .search-section input.auto-suggest-front {
+    width: 92%;
+    height: 30px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 20px;
+  }
+  header .phone-search .search-div.active {
+    width: 151px;
+    pointer-events: all;
+    opacity: 1;
   }
   section {
     overflow: hidden;
@@ -582,5 +635,101 @@
     line-height: 14px;
     font-weight: 500;
     color: #0062aa;
+  }
+  footer {
+    padding: 45px 0 0 0;
+  }
+  footer .logo-mob {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: start;
+    gap: 42px;
+  }
+  footer .logo-mob svg {
+    display: block;
+    flex-shrink: 0;
+    width: 44px;
+    height: auto;
+  }
+  footer .navigation {
+    flex-wrap: wrap;
+    gap: 28px;
+    justify-content: space-between;
+  }
+  footer .navigation .logo-wrapper {
+    display: none;
+  }
+  footer .navigation .work-time {
+    flex-basis: 50%;
+  }
+  footer .navigation .navigate {
+    flex-basis: 42%;
+  }
+  footer .navigation .social-net {
+    flex-basis: 42%;
+  }
+  footer .navigation .address {
+    flex-basis: 50%;
+  }
+  footer .wrapper-form {
+    margin-bottom: 37px;
+  }
+  footer .wrapper-form .heading {
+    margin-top: 50px;
+    padding-bottom: 16px;
+  }
+  footer .wrapper-form .heading h1 {
+    font-size: 14px;
+    color: #222;
+    line-height: 14px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  footer .wrapper-form form input::-moz-placeholder {
+    color: #898989;
+  }
+  footer .wrapper-form form input::placeholder {
+    color: #898989;
+  }
+  footer .wrapper-form form #name {
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-right: 0px;
+  }
+  footer .wrapper-form form #email {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+  footer .wrapper-form form #message {
+    flex-basis: 100%;
+    margin-top: 20px;
+  }
+  footer .wrapper-form form #submit {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #222;
+    line-height: 14px;
+    font-weight: 500;
+    color: white;
+  }
+  footer .copyright {
+    border-bottom: none;
+    padding: 30px 0;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 100px;
+  }
+  footer .copyright h2 {
+    font-size: 14px;
+    color: #222;
+    line-height: 14px;
+    font-weight: 400;
+    color: #7d7d7d;
+  }
+  footer .copyright h2:nth-child(2) {
+    margin-left: 0;
+  }
+  footer .copyright a {
+    margin-left: 0;
   }
 }/*# sourceMappingURL=responsive.css.map */

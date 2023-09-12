@@ -11,7 +11,7 @@ $(document).ready(function () {
     e.preventDefault();
     popup.classList.toggle("open");
     hamb.classList.toggle("active");
-    body.classList.toggle("noscroll");
+    // body.classList.toggle("noscroll");
     renderPopup();
   }
 
@@ -28,7 +28,7 @@ $(document).ready(function () {
   function closeOnClick() {
     popup.classList.remove("open");
     hamb.classList.remove("active");
-    body.classList.remove("noscroll");
+    // body.classList.remove("noscroll");
   }
 
   $("input[id='tel']").mask("+7 (999) 999-99-99");
@@ -72,5 +72,15 @@ $(document).ready(function () {
         event.target.classList.remove("full");
       }
     });
+  });
+
+  $(".search-open").click(function () {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(".search-div").removeClass("active");
+    } else {
+      $(this).addClass("active");
+      $(".search-div").addClass("active");
+    }
   });
 });
