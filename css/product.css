@@ -1,0 +1,122 @@
+@charset "UTF-8";
+.product {
+  position: relative;
+  padding: 150px 0 100px;
+}
+.product .heading {
+  border-top: 1px solid #076324;
+  padding-top: 24px;
+}
+.product .heading h1 {
+  margin: 0;
+}
+.product .heading h1.spread {
+  white-space: nowrap; /* Запрет переноса строки */
+  overflow: hidden; /* Скрыть текст, который не помещается */
+  text-overflow: ellipsis; /* Заменить скрытый текст многоточием */
+  max-width: 20ch;
+}
+.product .wrapper-product {
+  margin-left: 295px;
+  margin-top: 50px;
+  display: flex;
+  gap: 50px;
+}
+.product .wrapper-product .wrap-img {
+  border: 1px solid #0062aa;
+  max-width: 436px;
+  width: 100%;
+  height: 436px;
+  padding: 105px;
+}
+.product .wrapper-product .info {
+  max-width: 459px;
+  height: auto;
+}
+.product .wrapper-product .info .title {
+  font-size: 20px;
+  color: #222;
+  line-height: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+.product .wrapper-product .info .wrapper-services {
+  margin-top: 74px;
+}
+.product .wrapper-product .info .wrapper-services .item {
+  border-top: 1px solid #0062aa;
+  border-bottom: 1px solid #0062aa;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.product .wrapper-product .info .wrapper-services .item h3,
+.product .wrapper-product .info .wrapper-services .item h4 {
+  font-size: 16px;
+  color: #222;
+  line-height: 16px;
+  font-weight: 500;
+  color: #0062aa;
+  margin: 0;
+}
+.product .wrapper-product .info .wrapper-services .item h4 {
+  color: #222;
+}
+.product .wrapper-product .info .wrapper-services .item:last-child {
+  border-top: none;
+}
+.product .wrapper-product .info .terms {
+  display: inline-block;
+  font-size: 16px;
+  color: #222;
+  line-height: 16px;
+  font-weight: 500;
+  text-decoration: underline !important;
+  margin-top: 162px;
+  margin-bottom: 26px;
+}
+.product .wrapper-product .info .price {
+  border-top: 1px solid #0062aa;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.product .wrapper-product .info .price h2 {
+  font-size: 24px;
+  color: #222;
+  line-height: 24px;
+  font-weight: 600;
+  color: #0062aa;
+  margin: 0;
+}
+.product .wrapper-product .info .price a {
+  font-size: 16px;
+  color: #222;
+  line-height: 20px;
+  font-weight: 600;
+  text-decoration: underline !important;
+  color: #0062aa;
+  text-transform: uppercase;
+}
+
+.article-product .text ul {
+  padding-left: 1rem;
+}
+
+.services-inner-product {
+  padding: 0;
+}
+.services-inner-product .heading {
+  border-top: 1px solid #076324;
+  padding-top: 24px;
+}
+.services-inner-product .wrapper-products {
+  margin-top: 50px;
+  margin-left: 295px;
+}
+
+.services-inner-product-2 {
+  padding: 100px 0;
+}/*# sourceMappingURL=product.css.map */

@@ -57,6 +57,7 @@
   line-height: 16px;
   font-weight: 500;
   color: white;
+  text-transform: uppercase;
 }
 .need_know .wrapper .know {
   display: flex;

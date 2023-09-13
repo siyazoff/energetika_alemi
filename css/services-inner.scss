@@ -216,3 +216,42 @@ $blue: #0062aa;
     }
   }
 }
+
+.article {
+  position: relative;
+  padding: 0 0 100px 0;
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $green;
+    padding-top: 24px;
+
+    h1 {
+      @include font(16px, 16px, 500);
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+
+  .text {
+    max-width: 652px;
+    margin-left: 295px;
+
+    p {
+      @include font(16px, 20px, 400);
+    }
+
+    ul {
+      li {
+        list-style-type: disc;
+      }
+    }
+
+    h2 {
+      @include font(16px, 22px, 600);
+      color: #404040;
+      margin: 0;
+    }
+  }
+}

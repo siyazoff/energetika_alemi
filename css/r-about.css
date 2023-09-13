@@ -5,6 +5,9 @@
   .page_about .heading .bread-crumbs .slash {
     display: block;
   }
+  .page_about .description h2 {
+    max-width: 291px;
+  }
   .page_about .wrapper-img .bigger-vid {
     max-width: 100%;
   }

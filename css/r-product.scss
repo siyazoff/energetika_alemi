@@ -1,0 +1,111 @@
+$manrope: "Jost";
+$lightgreen: #8fcf21;
+$green: #076324;
+$gray: #5e5f62;
+$black: #222;
+$blue: #0062aa;
+
+@mixin font($titleVal, $lineHeight, $fontWeight) {
+  font-size: $titleVal;
+  color: $black;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+}
+
+@media (max-width: 1000px) {
+}
+
+@media all and (max-width: 768px) {
+  .product {
+    position: relative;
+    padding: 100px 0 50px;
+
+    .heading {
+      padding-top: 15px;
+    }
+
+    .wrapper-product {
+      margin-left: 0;
+      margin-top: 30px;
+      gap: 30px;
+      flex-direction: column;
+
+      .wrap-img {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        padding: 70px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .info {
+        max-width: 100%;
+
+        .title {
+          @include font(16px, 16px, 500);
+        }
+
+        .wrapper-services {
+          margin-top: 16px;
+
+          .item {
+            padding: 16px 0;
+
+            h3,
+            h4 {
+              @include font(14px, 14px, 500);
+              color: $blue;
+            }
+
+            h4 {
+              color: $black;
+            }
+          }
+        }
+
+        .terms {
+          @include font(14px, 14px, 500);
+          margin-top: 30px;
+          margin-bottom: 50px;
+        }
+
+        .price {
+          padding-top: 30px;
+        }
+      }
+    }
+  }
+
+  .article-product {
+    .text {
+      ul {
+        padding-left: 1rem;
+
+        li {
+          @include font(14px, 18px, 400);
+        }
+      }
+    }
+  }
+
+  .services-inner-product {
+    padding: 0;
+
+    .heading {
+      padding-top: 15px;
+    }
+
+    .wrapper-products {
+      margin-top: 30px;
+      margin-left: 0;
+    }
+  }
+
+  .services-inner-product-2 {
+    padding: 50px 0;
+  }
+}

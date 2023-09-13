@@ -108,3 +108,25 @@ jQuery(document).ready(function ($) {
     $(".more-items").hide();
   }
 });
+
+jQuery(document).ready(function ($) {
+  if ($(".wrapper-news-btn .wrapper-news").find(".news-item").length > 6) {
+    $(".load-more-news").click(function () {
+      $(
+        ".wrapper-news-btn .wrapper-news .news-item:nth-child(n+7)"
+      ).slideToggle("");
+      $(".wrapper-news-btn .wrapper-news .news-item:nth-child(n+7)").css(
+        "display",
+        "flex"
+      );
+      $(this).toggleClass("open");
+      if ($(this).hasClass("open")) {
+        $(this).html("Скрыть");
+      } else {
+        $(this).html("Загрузить Еще —");
+      }
+    });
+  } else {
+    $(".load-more-news").hide();
+  }
+});

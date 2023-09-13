@@ -198,4 +198,44 @@
   text-transform: uppercase;
   display: inline-block;
   margin-top: 30px;
+}
+
+.article {
+  position: relative;
+  padding: 0 0 100px 0;
+}
+.article .heading {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #076324;
+  padding-top: 24px;
+}
+.article .heading h1 {
+  font-size: 16px;
+  color: #222;
+  line-height: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+}
+.article .text {
+  max-width: 652px;
+  margin-left: 295px;
+}
+.article .text p {
+  font-size: 16px;
+  color: #222;
+  line-height: 20px;
+  font-weight: 400;
+}
+.article .text ul li {
+  list-style-type: disc;
+}
+.article .text h2 {
+  font-size: 16px;
+  color: #222;
+  line-height: 22px;
+  font-weight: 600;
+  color: #404040;
+  margin: 0;
 }/*# sourceMappingURL=services-inner.css.map */
