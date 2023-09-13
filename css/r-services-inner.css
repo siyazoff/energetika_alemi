@@ -1,0 +1,117 @@
+@media all and (max-width: 768px) {
+  .services-inner {
+    padding: 100px 0;
+  }
+  .services-inner .heading h1,
+  .services-inner .heading p {
+    font-size: 14px;
+    color: #222;
+    line-height: 20px;
+    font-weight: 500;
+  }
+  .services-inner .heading .bread-crumbs {
+    gap: 8px;
+  }
+  .services-inner .description {
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .services-inner .description h1 {
+    font-size: 20px;
+    color: #222;
+    line-height: 20px;
+    font-weight: 500;
+    color: #8fcf21;
+    margin-bottom: 20px;
+  }
+  .services-inner .description h2 {
+    font-size: 14px;
+    color: #222;
+    line-height: 18px;
+    font-weight: 500;
+  }
+  .services-inner .description p {
+    font-size: 14px;
+    color: #222;
+    line-height: 18px;
+    font-weight: 400;
+    color: #404040;
+  }
+  .services-inner .description a {
+    font-size: 16px;
+    color: #222;
+    line-height: 26px;
+    font-weight: 500;
+    color: #0062aa;
+    margin-top: 30px;
+  }
+  .services-inner .wrapper-products {
+    gap: 30px;
+    margin-top: 50px;
+    flex-direction: column;
+  }
+  .services-inner .wrapper-products .sorting .name-btn {
+    gap: 0;
+    justify-content: space-between;
+  }
+  .services-inner .wrapper-products .sorting .name-btn h2 {
+    font-size: 14px;
+    color: #222;
+    line-height: 14px;
+    font-weight: 500;
+  }
+  .services-inner .wrapper-products .sorting .items {
+    gap: 5px;
+    overflow: hidden;
+    height: 0px;
+  }
+  .services-inner .wrapper-products .sorting .items .item h2 {
+    font-size: 14px;
+    color: #222;
+    line-height: 17px;
+    font-weight: 400;
+    margin: 0;
+  }
+  .services-inner .wrapper-products .sorting.active .items {
+    height: 100px;
+  }
+  .services-inner .wrapper-products .grid {
+    grid-template-rows: repeat(auto-fit, minmax(295px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 7px;
+  }
+  .services-inner .wrapper-products .grid .item {
+    max-width: 100%;
+  }
+  .services-inner .wrapper-products .grid .item .wrapper-img {
+    padding: 54px 35px;
+  }
+  .services-inner .wrapper-products .grid .item .title {
+    height: 60px;
+    border-bottom: none;
+  }
+  .services-inner .wrapper-products .grid .item .title p {
+    font-size: 12px;
+    color: #222;
+    line-height: 14px;
+    font-weight: 400;
+  }
+  .services-inner .wrapper-products .grid .item .price {
+    margin-top: 8px;
+  }
+  .services-inner .wrapper-products .grid .item .price h2 {
+    font-size: 14px;
+    color: #222;
+    line-height: 14px;
+    font-weight: 600;
+    color: #0062aa;
+    margin: 0;
+  }
+  .services-inner .wrapper-products .grid .item .price a {
+    font-size: 14px;
+    color: #222;
+    line-height: 14px;
+    font-weight: 600;
+    color: #0062aa;
+  }
+}/*# sourceMappingURL=r-services-inner.css.map */

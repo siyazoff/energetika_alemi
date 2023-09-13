@@ -1,0 +1,133 @@
+$manrope: "Jost";
+$lightgreen: #8fcf21;
+$green: #076324;
+$gray: #5e5f62;
+$black: #222;
+$blue: #0062aa;
+
+@mixin font($titleVal, $lineHeight, $fontWeight) {
+  font-size: $titleVal;
+  color: $black;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+}
+
+@media (max-width: 1000px) {
+}
+
+@media all and (max-width: 768px) {
+  .services-inner {
+    padding: 100px 0;
+
+    .heading {
+      h1,
+      p {
+        @include font(14px, 20px, 500);
+      }
+
+      .bread-crumbs {
+        gap: 8px;
+      }
+    }
+
+    .description {
+      margin-left: 0;
+      max-width: 100%;
+
+      h1 {
+        @include font(20px, 20px, 500);
+        color: $lightgreen;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        @include font(14px, 18px, 500);
+      }
+
+      p {
+        @include font(14px, 18px, 400);
+        color: #404040;
+      }
+
+      a {
+        @include font(16px, 26px, 500);
+        color: #0062aa;
+        margin-top: 30px;
+      }
+    }
+
+    .wrapper-products {
+      gap: 30px;
+      margin-top: 50px;
+      flex-direction: column;
+
+      .sorting {
+        .name-btn {
+          gap: 0;
+          justify-content: space-between;
+
+          h2 {
+            @include font(14px, 14px, 500);
+          }
+        }
+
+        .items {
+          gap: 5px;
+          overflow: hidden;
+          height: 0px;
+
+          .item {
+            h2 {
+              @include font(14px, 17px, 400);
+              margin: 0;
+            }
+          }
+        }
+
+        &.active {
+          .items {
+            height: 100px;
+          }
+        }
+      }
+
+      .grid {
+        grid-template-rows: repeat(auto-fit, minmax(295px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px 7px;
+
+        .item {
+          max-width: 100%;
+
+          .wrapper-img {
+            padding: 54px 35px;
+          }
+
+          .title {
+            height: 60px;
+            border-bottom: none;
+
+            p {
+              @include font(12px, 14px, 400);
+            }
+          }
+
+          .price {
+            margin-top: 8px;
+
+            h2 {
+              @include font(14px, 14px, 600);
+              color: $blue;
+              margin: 0;
+            }
+
+            a {
+              @include font(14px, 14px, 600);
+              color: $blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}

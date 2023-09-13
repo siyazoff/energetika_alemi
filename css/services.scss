@@ -1,0 +1,56 @@
+$manrope: "Jost";
+$lightgreen: #8fcf21;
+$green: #076324;
+$gray: #5e5f62;
+$black: #222;
+
+@mixin font($titleVal, $lineHeight, $fontWeight) {
+  font-size: $titleVal;
+  color: $black;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+}
+
+.page_services {
+  padding-top: 130px;
+  position: relative;
+
+  .bread-crumbs {
+    display: flex;
+    gap: 10px;
+
+    .slash {
+      @include font(16px, 16px, 500);
+    }
+
+    .prev {
+      color: #7d7d7d;
+    }
+  }
+}
+
+.advantages_page_services {
+  padding: 0 0 100px 0;
+  position: relative;
+
+  .grid {
+    .grid-item {
+      background-image: url(../src/img/serv-adv-main.svg);
+      background-color: #0062aa;
+      border-bottom: 1px solid #0062aa;
+      border: none;
+
+      p {
+        color: white;
+      }
+    }
+
+    #item-2,
+    #item-4 {
+      background-image: url(../src/img/serv-adv-fain.svg);
+      background-color: white;
+      border: 1px solid #0062aa;
+      border-bottom: none;
+    }
+  }
+}

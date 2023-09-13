@@ -83,4 +83,28 @@ $(document).ready(function () {
       $(".search-div").addClass("active");
     }
   });
+
+  $(".sorting .name-btn").click(function () {
+    if ($(".sorting").hasClass("active")) {
+      $(".sorting").removeClass("active");
+    } else {
+      $(".sorting").addClass("active");
+    }
+  });
+});
+
+jQuery(document).ready(function ($) {
+  if ($(".wrapper-products .grid").find(".item").length > 6) {
+    $(".more-items").click(function () {
+      $(".wrapper-products .grid .item:nth-child(n+7)").slideToggle("");
+      $(this).toggleClass("open");
+      if ($(this).hasClass("open")) {
+        $(this).html("Скрыть");
+      } else {
+        $(this).html("Загрузить Еще —");
+      }
+    });
+  } else {
+    $(".more-items").hide();
+  }
 });
