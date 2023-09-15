@@ -1,0 +1,81 @@
+$manrope: "Jost";
+$lightgreen: #8fcf21;
+$green: #076324;
+$gray: #5e5f62;
+$black: #222;
+$blue: #0062aa;
+
+@mixin font($titleVal, $lineHeight, $fontWeight) {
+  font-size: $titleVal;
+  color: $black;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+}
+
+@media (max-width: 1000px) {
+}
+
+@media all and (max-width: 768px) {
+  .map {
+    position: relative;
+    padding: 100px 0 50px;
+
+    .heading {
+      padding-top: 15px;
+
+      h1 {
+        @include font(14px, 14px, 500);
+
+        &:last-child {
+          max-width: 150px;
+          text-align: end;
+        }
+      }
+    }
+
+    .wrapper-map {
+      margin-left: 0;
+      margin-top: 30px;
+      max-width: 100%;
+
+      iframe {
+        max-width: 100%;
+        height: 194px;
+      }
+    }
+  }
+
+  .contacts {
+    padding: 0 0 50px;
+
+    .heading {
+      padding-top: 15px;
+
+      h1 {
+        @include font(14px, 14px, 500);
+      }
+    }
+
+    .wrapper {
+      margin-left: 0;
+      margin-top: 30px;
+
+      .item {
+        width: 100%;
+        padding: 20px 0;
+
+        h2 {
+          @include font(14px, 14px, 400);
+
+          &:nth-child(2) {
+            display: none;
+          }
+        }
+      }
+
+      .wrapper-item {
+        max-width: fit-content;
+      }
+    }
+  }
+}

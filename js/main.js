@@ -93,6 +93,12 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $(".my_accordion .item").click(function () {
+    $(this).toggleClass("active");
+  });
+});
+
 jQuery(document).ready(function ($) {
   if ($(".wrapper-products .grid").find(".item").length > 6) {
     $(".more-items").click(function () {

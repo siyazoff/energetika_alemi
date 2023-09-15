@@ -1,0 +1,113 @@
+@charset "UTF-8";
+.how-order {
+  position: relative;
+  padding: 150px 0 100px;
+}
+.how-order .heading {
+  border-top: 1px solid #076324;
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.how-order .heading .bread-crumbs {
+  display: flex;
+  gap: 10px;
+}
+.how-order .heading h1,
+.how-order .heading p {
+  font-size: 16px;
+  color: #222;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.how-order .heading .prev {
+  color: #7d7d7d;
+}
+.how-order .wrapper {
+  margin-left: 295px;
+  margin-top: 55px;
+}
+.how-order .wrapper .title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.how-order .wrapper .title p {
+  max-width: 405px;
+  font-size: 16px;
+  color: #222;
+  line-height: 20px;
+  font-weight: 400;
+}
+.how-order .wrapper .title a {
+  font-size: 40px;
+  color: #222;
+  line-height: 40px;
+  font-weight: 500;
+  color: #8fcf21;
+}
+.how-order .wrapper .my_accordion {
+  width: 100%;
+  max-width: 945px;
+}
+.how-order .wrapper .my_accordion .item {
+  position: relative;
+}
+.how-order .wrapper .my_accordion .item .label {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  gap: 299px;
+}
+.how-order .wrapper .my_accordion .item .label h2 {
+  font-size: 16px;
+  color: #222;
+  line-height: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+.how-order .wrapper .my_accordion .item .label::before {
+  content: "(Читать)";
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #222;
+  line-height: 20px;
+  font-weight: 400;
+}
+.how-order .wrapper .my_accordion .item .content {
+  position: relative;
+  background: transparent;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.5s;
+  font-size: 16px;
+  color: #222;
+  line-height: 20px;
+  font-weight: 400;
+  color: #404040;
+  margin-left: auto;
+  max-width: 630px;
+  margin-top: 0px;
+}
+.how-order .wrapper .my_accordion .item.active .content {
+  height: 100px;
+  margin-top: 30px;
+}
+.how-order .wrapper .my_accordion .item.active .label::before {
+  content: "()";
+}
+.how-order .wrapper .info {
+  margin-top: 150px;
+}
+.how-order .wrapper .info p {
+  font-size: 16px;
+  color: #222;
+  line-height: 20px;
+  font-weight: 400;
+  color: #303030;
+}/*# sourceMappingURL=how-to-order.css.map */

@@ -1,0 +1,38 @@
+.page_services {
+  padding-top: 130px;
+  position: relative;
+}
+.page_services .bread-crumbs {
+  display: flex;
+  gap: 10px;
+}
+.page_services .bread-crumbs .slash {
+  font-size: 16px;
+  color: #222;
+  line-height: 16px;
+  font-weight: 500;
+}
+.page_services .bread-crumbs .prev {
+  color: #7d7d7d;
+}
+
+.advantages_page_services {
+  padding: 0 0 100px 0;
+  position: relative;
+}
+.advantages_page_services .grid .grid-item {
+  background-image: url(../src/img/serv-adv-main.svg);
+  background-color: #0062aa;
+  border-bottom: 1px solid #0062aa;
+  border: none;
+}
+.advantages_page_services .grid .grid-item p {
+  color: white;
+}
+.advantages_page_services .grid #item-2,
+.advantages_page_services .grid #item-4 {
+  background-image: url(../src/img/serv-adv-fain.svg);
+  background-color: white;
+  border: 1px solid #0062aa;
+  border-bottom: none;
+}/*# sourceMappingURL=projects.css.map */

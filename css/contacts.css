@@ -1,0 +1,69 @@
+.map {
+  position: relative;
+  padding: 150px 0 100px;
+}
+.map .heading {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #076324;
+  padding-top: 25px;
+}
+.map .heading h1 {
+  font-size: 16px;
+  color: #222;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+}
+.map .wrapper-map {
+  margin-left: 295px;
+  margin-top: 50px;
+}
+
+.contacts {
+  position: relative;
+  padding: 0 0 100px;
+}
+.contacts .heading {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #076324;
+  padding-top: 25px;
+}
+.contacts .heading h1 {
+  font-size: 16px;
+  color: #222;
+  line-height: 16px;
+  font-weight: 500;
+  margin: 0;
+  text-transform: uppercase;
+}
+.contacts .wrapper {
+  margin-left: 295px;
+  margin-top: 50px;
+}
+.contacts .wrapper .item {
+  border-top: 1px solid #7d7d7d;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0;
+}
+.contacts .wrapper .item h2 {
+  font-size: 16px;
+  color: #222;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
+}
+.contacts .wrapper .item:last-child {
+  border-bottom: 1px solid #7d7d7d;
+}
+.contacts .wrapper .wrapper-item {
+  display: flex;
+  justify-content: space-between;
+  max-width: 333px;
+  width: 100%;
+}/*# sourceMappingURL=contacts.css.map */

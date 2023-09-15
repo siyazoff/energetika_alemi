@@ -1,0 +1,125 @@
+$manrope: "Jost";
+$lightgreen: #8fcf21;
+$green: #076324;
+$gray: #5e5f62;
+$black: #222;
+$blue: #0062aa;
+
+@mixin font($titleVal, $lineHeight, $fontWeight) {
+  font-size: $titleVal;
+  color: $black;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+}
+
+.how-order {
+  position: relative;
+  padding: 150px 0 100px;
+
+  .heading {
+    border-top: 1px solid $green;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+
+    .bread-crumbs {
+      display: flex;
+      gap: 10px;
+    }
+
+    h1,
+    p {
+      @include font(16px, 20px, 500);
+      text-transform: uppercase;
+    }
+
+    .prev {
+      color: #7d7d7d;
+    }
+  }
+
+  .wrapper {
+    margin-left: 295px;
+    margin-top: 55px;
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 100px;
+
+      p {
+        max-width: 405px;
+        @include font(16px, 20px, 400);
+      }
+
+      a {
+        @include font(40px, 40px, 500);
+        color: $lightgreen;
+      }
+    }
+
+    .my_accordion {
+      width: 100%;
+      max-width: 945px;
+
+      .item {
+        position: relative;
+
+        .label {
+          position: relative;
+          cursor: pointer;
+          display: flex;
+          gap: 299px;
+
+          h2 {
+            @include font(16px, 20px, 400);
+            margin: 0;
+          }
+
+          &::before {
+            content: "(Читать)";
+            position: absolute;
+            top: 50%;
+            right: 5px;
+            transform: translateY(-50%);
+            @include font(16px, 20px, 400);
+          }
+        }
+
+        .content {
+          position: relative;
+          background: transparent;
+          height: 0;
+          width: 100%;
+          overflow: hidden;
+          transition: 0.5s;
+          @include font(16px, 20px, 400);
+          color: #404040;
+          margin-left: auto;
+          max-width: 630px;
+          margin-top: 0px;
+        }
+      }
+
+      .item.active {
+        .content {
+          height: 100px;
+          margin-top: 30px;
+        }
+
+        .label::before {
+          content: "()";
+        }
+      }
+    }
+
+    .info {
+      margin-top: 150px;
+
+      p {
+        @include font(16px, 20px, 400);
+        color: #303030;
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+@media all and (max-width: 768px) {
+  .how-order {
+    position: relative;
+    padding: 100px 0 50px;
+  }
+  .how-order .heading {
+    padding-top: 15px;
+  }
+  .how-order .heading .bread-crumbs {
+    gap: 8px;
+  }
+  .how-order .heading h1,
+  .how-order .heading p {
+    font-size: 14px;
+    color: #222;
+    line-height: 14px;
+    font-weight: 500;
+  }
+  .how-order .wrapper {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .how-order .wrapper .title {
+    margin-bottom: 30px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .how-order .wrapper .title p {
+    max-width: 100%;
+    font-size: 14px;
+    color: #222;
+    line-height: 14px;
+    font-weight: 400;
+  }
+  .how-order .wrapper .title a {
+    font-size: 20px;
+    color: #222;
+    line-height: 20px;
+    font-weight: 500;
+    color: #8fcf21;
+  }
+  .how-order .wrapper .my_accordion {
+    width: 100%;
+    max-width: 100%;
+  }
+  .how-order .wrapper .my_accordion .item .label {
+    gap: 20px;
+  }
+  .how-order .wrapper .my_accordion .item .label h2 {
+    font-size: 14px;
+    color: #222;
+    line-height: 14px;
+    font-weight: 400;
+  }
+  .how-order .wrapper .my_accordion .item .label::before {
+    font-size: 14px;
+    color: #222;
+    line-height: 18px;
+    font-weight: 400;
+  }
+  .how-order .wrapper .my_accordion .item .content {
+    overflow: hidden;
+    font-size: 14px;
+    color: #222;
+    line-height: 18px;
+    font-weight: 400;
+    color: #404040;
+    margin-left: 0;
+    max-width: 100%;
+    margin-top: 0px;
+  }
+  .how-order .wrapper .my_accordion .item.active .content {
+    height: 100px;
+    margin-top: 10px;
+    overflow-y: scroll;
+  }
+  .how-order .wrapper .info {
+    margin-top: 50px;
+  }
+  .how-order .wrapper .info p {
+    font-size: 14px;
+    color: #222;
+    line-height: 20px;
+    font-weight: 400;
+    color: #303030;
+  }
+}/*# sourceMappingURL=r-how-to-order.css.map */

@@ -1,0 +1,84 @@
+$manrope: "Jost";
+$lightgreen: #8fcf21;
+$green: #076324;
+$gray: #5e5f62;
+$black: #222;
+$blue: #0062aa;
+
+@mixin font($titleVal, $lineHeight, $fontWeight) {
+  font-size: $titleVal;
+  color: $black;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+}
+
+.map {
+  position: relative;
+  padding: 150px 0 100px;
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $green;
+    padding-top: 25px;
+
+    h1 {
+      @include font(16px, 20px, 500);
+      text-transform: uppercase;
+      margin: 0;
+    }
+  }
+
+  .wrapper-map {
+    margin-left: 295px;
+    margin-top: 50px;
+  }
+}
+
+.contacts {
+  position: relative;
+  padding: 0 0 100px;
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $green;
+    padding-top: 25px;
+
+    h1 {
+      @include font(16px, 16px, 500);
+      margin: 0;
+      text-transform: uppercase;
+    }
+  }
+
+  .wrapper {
+    margin-left: 295px;
+    margin-top: 50px;
+
+    .item {
+      border-top: 1px solid #7d7d7d;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 20px 0;
+
+      h2 {
+        @include font(16px, 20px, 400);
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      &:last-child {
+        border-bottom: 1px solid #7d7d7d;
+      }
+    }
+
+    .wrapper-item {
+      display: flex;
+      justify-content: space-between;
+      max-width: 333px;
+      width: 100%;
+    }
+  }
+}

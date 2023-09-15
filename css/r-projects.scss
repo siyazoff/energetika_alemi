@@ -1,0 +1,74 @@
+$manrope: "Jost";
+$lightgreen: #8fcf21;
+$green: #076324;
+$gray: #5e5f62;
+$black: #222;
+$blue: #0062aa;
+
+@mixin font($titleVal, $lineHeight, $fontWeight) {
+  font-size: $titleVal;
+  color: $black;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+}
+
+@media (max-width: 1000px) {
+}
+
+@media all and (max-width: 768px) {
+  .news {
+    padding: 100px 0;
+
+    .heading {
+      .bread-crumbs {
+        gap: 8px;
+
+        h1,
+        p {
+          @include font(14px, 14px, 500);
+        }
+      }
+
+      .wrapper-page {
+        p {
+          display: block;
+        }
+      }
+    }
+
+    .wrapper-news-btn {
+      display: flex;
+      flex-direction: column;
+
+      .load-more-news {
+        @include font(16px, 26px, 500);
+        color: $blue;
+        background-color: transparent;
+        text-transform: uppercase;
+        margin-left: auto;
+        margin-top: 30px;
+      }
+    }
+
+    .wrapper-news {
+      flex-direction: column;
+      gap: 30px;
+
+      .news-item {
+        .img-desc {
+          img {
+            max-width: 100%;
+          }
+
+          .desc {
+            max-width: 100%;
+          }
+        }
+      }
+
+      .news-item:nth-child(n + 7) {
+        display: none;
+      }
+    }
+  }
+}

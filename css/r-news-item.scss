@@ -1,0 +1,116 @@
+$manrope: "Jost";
+$lightgreen: #8fcf21;
+$green: #076324;
+$gray: #5e5f62;
+$black: #222;
+$blue: #0062aa;
+
+@mixin font($titleVal, $lineHeight, $fontWeight) {
+  font-size: $titleVal;
+  color: $black;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+}
+
+@media (max-width: 1000px) {
+}
+
+@media all and (max-width: 768px) {
+  .news-item {
+    padding: 100px 0;
+
+    .heading {
+      padding-top: 15px;
+
+      .bread-crumbs {
+        gap: 8px;
+        flex-wrap: wrap;
+
+        h1,
+        p {
+          @include font(14px, 14px, 500);
+          margin: 0;
+        }
+      }
+
+      p {
+        @include font(14px, 14px, 500);
+      }
+    }
+
+    .big-wrapper {
+      flex-direction: column-reverse;
+      gap: 50px;
+      margin-top: 30px;
+
+      .right-wrapper {
+        padding-top: 30px;
+        max-width: 100%;
+
+        .date {
+          h2 {
+            @include font(14px, 14px, 500);
+          }
+        }
+
+        .img-wrapper {
+          margin-top: 16px;
+        }
+
+        .content {
+          margin-top: 16px;
+
+          h2 {
+            @include font(16px, 18px, 500);
+          }
+
+          a {
+            @include font(14px, 14px, 500);
+            color: $blue;
+          }
+        }
+      }
+
+      .left-wrapper {
+        max-width: 100%;
+        flex-direction: column;
+        overflow-x: scroll;
+
+        .heading {
+          display: flex;
+          justify-content: space-between;
+          border-top: 1px solid $green;
+          padding-top: 15px;
+
+          h1 {
+            @include font(14px, 14px, 500);
+            text-transform: uppercase;
+          }
+        }
+
+        .news-wrapper {
+          display: flex;
+          flex-direction: row;
+          gap: 20px;
+          overflow-x: scroll;
+        }
+
+        .news-item-small {
+          padding-top: 0;
+          gap: 16px;
+          border-top: none;
+
+          .date-link {
+            order: 3;
+          }
+
+          .info {
+            p {
+              @include font(16px, 20px, 500);
+            }
+          }
+        }
+      }
+    }
+  }
+}

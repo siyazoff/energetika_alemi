@@ -1,0 +1,102 @@
+$manrope: "Jost";
+$lightgreen: #8fcf21;
+$green: #076324;
+$gray: #5e5f62;
+$black: #222;
+$blue: #0062aa;
+
+@mixin font($titleVal, $lineHeight, $fontWeight) {
+  font-size: $titleVal;
+  color: $black;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+}
+
+@media (max-width: 1000px) {
+}
+
+@media all and (max-width: 768px) {
+  .how-order {
+    position: relative;
+    padding: 100px 0 50px;
+
+    .heading {
+      padding-top: 15px;
+
+      .bread-crumbs {
+        gap: 8px;
+      }
+
+      h1,
+      p {
+        @include font(14px, 14px, 500);
+      }
+    }
+
+    .wrapper {
+      margin-left: 0;
+      margin-top: 30px;
+
+      .title {
+        margin-bottom: 30px;
+        flex-direction: column;
+        gap: 30px;
+
+        p {
+          max-width: 100%;
+          @include font(14px, 14px, 400);
+        }
+
+        a {
+          @include font(20px, 20px, 500);
+          color: $lightgreen;
+        }
+      }
+
+      .my_accordion {
+        width: 100%;
+        max-width: 100%;
+
+        .item {
+          .label {
+            gap: 20px;
+
+            h2 {
+              @include font(14px, 14px, 400);
+            }
+
+            &::before {
+              @include font(14px, 18px, 400);
+            }
+          }
+
+          .content {
+            overflow: hidden;
+            @include font(14px, 18px, 400);
+            color: #404040;
+            margin-left: 0;
+            max-width: 100%;
+            margin-top: 0px;
+          }
+        }
+
+        .item.active {
+          .content {
+            height: 100px;
+            margin-top: 10px;
+            overflow-y: scroll;
+          }
+        }
+      }
+
+      .info {
+        margin-top: 50px;
+
+        p {
+          @include font(14px, 20px, 400);
+          color: #303030;
+        }
+      }
+    }
+  }
+}
