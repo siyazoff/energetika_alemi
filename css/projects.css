@@ -1,38 +1,58 @@
-.page_services {
-  padding-top: 130px;
-  position: relative;
+.projects .wrapper-projects {
+  margin-left: 295px;
 }
-.page_services .bread-crumbs {
+.projects .wrapper-projects .right-wrap .item {
+  width: 100%;
+  border-top: 1px solid #7d7d7d;
+  padding: 19px 0 20px;
   display: flex;
-  gap: 10px;
-}
-.page_services .bread-crumbs .slash {
-  font-size: 16px;
-  color: #222;
-  line-height: 16px;
-  font-weight: 500;
-}
-.page_services .bread-crumbs .prev {
-  color: #7d7d7d;
-}
-
-.advantages_page_services {
-  padding: 0 0 100px 0;
+  cursor: pointer;
   position: relative;
 }
-.advantages_page_services .grid .grid-item {
-  background-image: url(../src/img/serv-adv-main.svg);
-  background-color: #0062aa;
-  border-bottom: 1px solid #0062aa;
-  border: none;
+.projects .wrapper-projects .right-wrap .item .hover-image {
+  position: absolute;
+  width: 269px;
+  height: 252px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s;
+  overflow: hidden;
 }
-.advantages_page_services .grid .grid-item p {
-  color: white;
+.projects .wrapper-projects .right-wrap .item .hover-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
-.advantages_page_services .grid #item-2,
-.advantages_page_services .grid #item-4 {
-  background-image: url(../src/img/serv-adv-fain.svg);
-  background-color: white;
-  border: 1px solid #0062aa;
-  border-bottom: none;
+.projects .wrapper-projects .right-wrap .item h2 {
+  font-size: 14px;
+  color: #222;
+  line-height: 14px;
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.projects .wrapper-projects .right-wrap .item .wrapper-inner {
+  display: flex;
+  gap: 203px;
+  margin-left: auto;
+}
+.projects .wrapper-projects .right-wrap .item .wrapper-inner h3 {
+  font-size: 14px;
+  color: #222;
+  line-height: 14px;
+  font-weight: 400;
+  margin: 0;
+  text-transform: uppercase;
+}
+.projects .wrapper-projects .right-wrap .item:last-child {
+  border-bottom: 1px solid #7d7d7d;
+}
+.projects .wrapper-projects .right-wrap .item:hover h2 {
+  font-weight: 500;
+  transition: all 0.3s;
 }/*# sourceMappingURL=projects.css.map */
