@@ -1,0 +1,32 @@
+$manrope: "Jost";
+$lightgreen: #8fcf21;
+$green: #076324;
+$gray: #5e5f62;
+$black: #222;
+
+@mixin font($titleVal, $lineHeight, $fontWeight) {
+  font-size: $titleVal;
+  color: $black;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+}
+
+.projects-single {
+  padding: 150px 0 0 0;
+
+  .wrapper {
+    .my_accordion {
+      .item {
+        .label {
+          h2 {
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
+
+.projects-single-2 {
+  padding: 100px 0;
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("../src/Manrope/stylesheet.css");
 * {
   font-family: "Jost";
@@ -1079,26 +1080,29 @@ footer .copyright a:hover h2 {
 .modal-body {
   position: relative;
   z-index: 1;
-  background-color: #111928;
-  max-width: 912px;
+  background-color: transparent;
+  max-width: 553px;
   width: 100%;
-  padding: 48px !important;
+  padding: 50px !important;
+  background-image: url("../src/img/modal.png");
+  background-position: bottom;
 }
 .modal-body .heading {
-  margin-bottom: 48px;
+  margin-bottom: 50px;
 }
 .modal-body .heading h1 {
-  font-size: 28px;
+  font-size: 24px;
   color: #222;
-  line-height: 32px;
-  font-weight: 400;
+  line-height: 24px;
+  font-weight: 500;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #8fcf21;
+  text-align: center;
 }
 .modal-body .close {
   position: absolute;
-  right: 16px;
-  top: 10px;
+  right: 14px;
+  top: 17px;
   z-index: 2;
   cursor: pointer;
 }
@@ -1106,35 +1110,145 @@ footer .copyright a:hover h2 {
   display: flex;
   flex-direction: column;
 }
+.modal-body form textarea {
+  background: bottom;
+  border-bottom: 1px solid #303030;
+  height: 77px;
+  width: 100%;
+  overflow-y: scroll;
+  resize: none;
+  font-size: 16px;
+  color: #222;
+  line-height: 16px;
+  font-weight: 400;
+}
 .modal-body form input {
   max-width: 100%;
   width: 100%;
   background: bottom;
-  border-bottom: 1px solid #fff;
-  padding: 20px 0;
-  margin-bottom: 48px;
-  color: white;
+  border-bottom: 1px solid #303030;
+  padding: 20px 0 0 0;
+  margin-bottom: 40px;
+  color: #222;
+  font-size: 16px;
+  color: #222;
+  line-height: 16px;
+  font-weight: 400;
 }
 .modal-body form input#modal-btn {
   border-bottom: none;
-  background: #047481;
-  color: white;
-  margin-bottom: 24px;
+  font-size: 16px;
+  color: #222;
+  line-height: 26px;
+  font-weight: 500;
+  color: #0062aa;
+  text-transform: uppercase;
+  margin-bottom: 0;
 }
-.modal-body form a {
+
+.thx {
+  height: 100vh;
+  padding: 150px 0 100px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: bottom;
-  border: 1px solid #047481;
-  height: 63px;
-  font-size: 15px;
-  color: #222;
-  line-height: 24px;
-  font-weight: 300;
-  color: white;
-  cursor: pointer;
 }
-.modal-body form a:hover {
-  background: #047481;
+.thx h1 {
+  font-size: 64px;
+  color: #222;
+  line-height: 64px;
+  font-weight: 300;
+  text-align: center;
+}
+.thx h2 {
+  font-size: 16px;
+  color: #222;
+  line-height: 20px;
+  font-weight: 500;
+  color: #0062aa;
+  text-decoration: underline;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 44px;
+}
+
+.page_not {
+  height: 100vh;
+}
+.page_not .p_n_cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+.page_not .start {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000;
+}
+.page_not .start h2 {
+  margin: 0;
+  margin-top: 71px;
+  font-size: 16px;
+  color: #222;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.page_not .start .spin {
+  border-left: 1px solid #000000;
+  height: 158px;
+}
+.page_not .start .spin svg {
+  margin-left: 189px;
+  margin-top: 21px;
+  animation: rotate 10s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); /* Начальный угол вращения (0 градусов) */
+  }
+  100% {
+    transform: rotate(360deg); /* Завершающий угол вращения (360 градусов) */
+  }
+}
+.page_not h1 {
+  font-size: 290.417px;
+  color: #222;
+  line-height: 290.417px;
+  font-weight: 300;
+  margin: 0;
+  text-align: center;
+}
+.page_not .end {
+  border-top: 1px solid #000;
+  display: flex;
+  justify-content: space-between;
+}
+.page_not .end h2 {
+  font-size: 16px;
+  color: #222;
+  line-height: 20px;
+  font-weight: 500;
+  margin: 0;
+  text-transform: uppercase;
+  margin-top: 77px;
+}
+.page_not .end .spin {
+  border-left: 1px solid #000;
+  height: 158px;
+}
+.page_not .end .spin a {
+  margin-left: 189px;
+  display: inline-block;
+  margin-top: 77px;
+}
+.page_not .end .spin a h2 {
+  font-size: 16px;
+  color: #222;
+  line-height: 20px;
+  font-weight: 500;
+  margin: 0;
+  color: #0062aa;
+  text-transform: uppercase;
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,18 @@
+@media all and (max-width: 768px) {
+  .projects .wrapper-projects {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+  .projects .wrapper-projects .right-wrap .item {
+    padding: 20px 0;
+  }
+  .projects .wrapper-projects .right-wrap .item h2 {
+    max-width: 250px;
+  }
+  .projects .wrapper-projects .right-wrap .item .hover-image {
+    display: none;
+  }
+  .projects .wrapper-projects .right-wrap .item .wrapper-inner {
+    gap: 27px;
+  }
+}/*# sourceMappingURL=r-projects-inner.css.map */

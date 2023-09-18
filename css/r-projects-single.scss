@@ -1,0 +1,43 @@
+$manrope: "Jost";
+$lightgreen: #8fcf21;
+$green: #076324;
+$gray: #5e5f62;
+$black: #222;
+$blue: #0062aa;
+
+@mixin font($titleVal, $lineHeight, $fontWeight) {
+  font-size: $titleVal;
+  color: $black;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+}
+
+@media (max-width: 1000px) {
+}
+
+@media all and (max-width: 768px) {
+  .projects {
+    .wrapper-projects {
+      margin-left: 0;
+      margin-top: 30px;
+
+      .right-wrap {
+        .item {
+          padding: 20px 0;
+
+          h2 {
+            max-width: 250px;
+          }
+
+          .hover-image {
+            display: none;
+          }
+
+          .wrapper-inner {
+            gap: 27px;
+          }
+        }
+      }
+    }
+  }
+}

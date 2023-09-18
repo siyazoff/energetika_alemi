@@ -845,4 +845,96 @@ $black: #222;
       }
     }
   }
+
+  .thx {
+    height: 100vh;
+    padding: 150px 0 100px;
+    display: flex;
+    align-items: center;
+
+    h1 {
+      @include font(24px, 24px, 400);
+    }
+
+    h2 {
+      @include font(14px, 14px, 500);
+      color: #0062aa;
+      margin-top: 20px;
+    }
+  }
+
+  .page_not {
+    .start {
+      h2 {
+        margin-top: 50px;
+        @include font(14px, 14px, 500);
+      }
+
+      .spin {
+        height: 111px;
+
+        svg {
+          margin-left: 44px;
+          margin-top: 22px;
+          width: 65px;
+          height: auto;
+        }
+      }
+    }
+
+    h1 {
+      @include font(160px, 160px, 300);
+    }
+
+    .end {
+      border-top: 1px solid #000;
+      display: flex;
+      justify-content: space-between;
+
+      h2 {
+        @include font(14px, 14px, 500);
+
+        margin-top: 50px;
+      }
+
+      .spin {
+        height: 111px;
+
+        a {
+          margin-left: 26px;
+          margin-top: 53px;
+
+          h2 {
+            @include font(14px, 14px, 500);
+            color: #0062aa;
+          }
+        }
+      }
+    }
+  }
+
+  .modal-body {
+    max-width: 553px;
+    width: 100%;
+    padding: 20px !important;
+
+    .heading {
+      margin-bottom: 30px;
+      margin-top: 36px;
+
+      h1 {
+        @include font(20px, 20px, 500);
+        color: #8fcf21;
+      }
+    }
+
+    form {
+      input#modal-btn {
+        margin-left: auto;
+        margin-top: 10px;
+        width: fit-content;
+        margin-bottom: 30px;
+      }
+    }
+  }
 }
