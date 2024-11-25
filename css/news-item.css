@@ -81,6 +81,11 @@
   margin-top: 50px;
   text-transform: uppercase;
 }
+.news-item .big-wrapper .right-wrapper .content .send {
+  display: flex;
+  gap: 15px;
+  align-items: end;
+}
 .news-item .big-wrapper .left-wrapper {
   max-width: 265px;
   width: 100%;

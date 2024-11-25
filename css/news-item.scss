@@ -87,6 +87,12 @@ $blue: #0062aa;
           margin-top: 50px;
           text-transform: uppercase;
         }
+
+        .send {
+          display: flex;
+          gap: 15px;
+          align-items: end;
+        }
       }
     }
 
